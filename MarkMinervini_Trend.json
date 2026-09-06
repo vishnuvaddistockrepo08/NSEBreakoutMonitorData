@@ -1,7 +1,7 @@
 {
   "schema_version": "minervini_trend_v1",
   "scanner": "MarkMinervini Trend",
-  "generated_at_ist": "2026-09-05T23:55:14.539491+05:30",
+  "generated_at_ist": "2026-09-06T16:26:51.663311+05:30",
   "data_timestamp": "2026-09-04",
   "input_file": "stocks.json",
   "benchmark": {
@@ -35,8 +35,8 @@
     "technical_passed": 60,
     "fundamental_unavailable_or_insufficient": 0,
     "fundamental_available_but_not_accelerating": 50,
-    "category_A_count": 3,
-    "category_B_count": 7,
+    "category_A_count": 2,
+    "category_B_count": 8,
     "qualified_count": 10
   },
   "candidates": [
@@ -109,76 +109,6 @@
       ],
       "category": "A",
       "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.93%; 0.76 ATR from 52W high; RS 52W high 0 trading day(s) ago; dual EPS + sales acceleration"
-    },
-    {
-      "ticker": "DIVISLAB",
-      "yahoo_symbol": "DIVISLAB.NS",
-      "company_name": "Divi's Laboratories",
-      "index_memberships": [],
-      "price_date": "2026-09-04",
-      "current_price": 9100.0,
-      "dma50": 7924.28,
-      "dma150": 6908.46,
-      "dma200": 6773.55,
-      "atr14": 191.55,
-      "atr_pct": 2.1,
-      "atr_priority": "LOW_VOL_BELOW_3",
-      "high_52w": 9467.0,
-      "pct_below_52w_high": 3.88,
-      "distance_from_52w_high_atrs": 1.92,
-      "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 4,
-      "rs_new_high_date": "2026-08-31",
-      "technical_checks": {
-        "dma50_gt_dma150_gt_dma200": true,
-        "price_gt_dma200": true,
-        "atr_pct_le_10": true,
-        "within_4_atrs_of_52w_high": true,
-        "rs_new_52w_high_within_10_trading_days": true
-      },
-      "technical_pass": true,
-      "fundamental_status": "OK",
-      "fundamental_growth_method": "sequential_quarter_over_quarter",
-      "accelerating_eps_quarters": 3,
-      "accelerating_sales_quarters": 3,
-      "eps_growth": [
-        {
-          "quarter": "2025-03-31",
-          "growth_pct": 12.3
-        },
-        {
-          "quarter": "2025-06-30",
-          "growth_pct": -17.81
-        },
-        {
-          "quarter": "2025-12-31",
-          "growth_pct": 7.27
-        },
-        {
-          "quarter": "2026-03-31",
-          "growth_pct": 28.8
-        }
-      ],
-      "sales_growth": [
-        {
-          "quarter": "2025-03-31",
-          "growth_pct": 11.47
-        },
-        {
-          "quarter": "2025-06-30",
-          "growth_pct": -6.77
-        },
-        {
-          "quarter": "2025-12-31",
-          "growth_pct": 8.05
-        },
-        {
-          "quarter": "2026-03-31",
-          "growth_pct": 8.72
-        }
-      ],
-      "category": "A",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.1%; 1.92 ATR from 52W high; RS 52W high 4 trading day(s) ago; dual EPS + sales acceleration"
     },
     {
       "ticker": "GLENMARK",
@@ -599,6 +529,76 @@
       ],
       "category": "B",
       "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 1.94%; 2.38 ATR from 52W high; RS 52W high 3 trading day(s) ago; >=3-quarter sales acceleration"
+    },
+    {
+      "ticker": "DIVISLAB",
+      "yahoo_symbol": "DIVISLAB.NS",
+      "company_name": "Divi's Laboratories",
+      "index_memberships": [],
+      "price_date": "2026-09-04",
+      "current_price": 9100.0,
+      "dma50": 7924.28,
+      "dma150": 6908.46,
+      "dma200": 6773.55,
+      "atr14": 191.55,
+      "atr_pct": 2.1,
+      "atr_priority": "LOW_VOL_BELOW_3",
+      "high_52w": 9467.0,
+      "pct_below_52w_high": 3.88,
+      "distance_from_52w_high_atrs": 1.92,
+      "rs_new_52w_high_within_10d": true,
+      "rs_new_high_recency_trading_days": 4,
+      "rs_new_high_date": "2026-08-31",
+      "technical_checks": {
+        "dma50_gt_dma150_gt_dma200": true,
+        "price_gt_dma200": true,
+        "atr_pct_le_10": true,
+        "within_4_atrs_of_52w_high": true,
+        "rs_new_52w_high_within_10_trading_days": true
+      },
+      "technical_pass": true,
+      "fundamental_status": "OK",
+      "fundamental_growth_method": "sequential_quarter_over_quarter",
+      "accelerating_eps_quarters": 0,
+      "accelerating_sales_quarters": 4,
+      "eps_growth": [
+        {
+          "quarter": "2025-06-30",
+          "growth_pct": -17.81
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": 7.27
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 28.8
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 19.92
+        }
+      ],
+      "sales_growth": [
+        {
+          "quarter": "2025-06-30",
+          "growth_pct": -6.77
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": 8.05
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 8.72
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 8.8
+        }
+      ],
+      "category": "B",
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.1%; 1.92 ATR from 52W high; RS 52W high 4 trading day(s) ago; >=3-quarter sales acceleration"
     },
     {
       "ticker": "NAZARA",
