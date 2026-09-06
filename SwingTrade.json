@@ -1,7 +1,7 @@
 {
   "schema_version": "swingtrade_v1",
   "scanner": "SwingTrade Scanner - Momentum + AVWAP",
-  "generated_at_ist": "2026-09-06T16:33:30.787781+05:30",
+  "generated_at_ist": "2026-09-06T23:22:20.425989+05:30",
   "data_timestamp": "2026-09-04",
   "input_file": "C:\\VishnuVaddi\\StockMarket\\NSEBreakout_TomorrowBullish_Combined\\NSEBreakout_TomorrowBullish_Combined\\NSEBreakoutMonitor\\stocks.json",
   "benchmark": {
@@ -19,13 +19,13 @@
     "vwap_note": "True daily VWAP requires intraday bars; daily typical price and running weekly VWAP are stored as proxies."
   },
   "coverage": {
-    "universe_requested": 609,
-    "successfully_scanned": 563,
-    "failed": 46,
-    "qualified_count": 76,
-    "watch_count": 74,
-    "strategy_a_count": 58,
-    "strategy_b_count": 27,
+    "universe_requested": 815,
+    "successfully_scanned": 772,
+    "failed": 43,
+    "qualified_count": 86,
+    "watch_count": 103,
+    "strategy_a_count": 64,
+    "strategy_b_count": 31,
     "dual_strategy_count": 9
   },
   "candidates": [
@@ -2232,6 +2232,91 @@
       "rank": 26
     },
     {
+      "ticker": "FEDFINA.NS",
+      "company_name": "FEDFINA",
+      "price_date": "2026-09-04",
+      "current_price": 161.56,
+      "selected_strategy": "A",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 78,
+        "qualified": true,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 9.48,
+        "ath_reference": 178.48,
+        "range_width_20d_pct": 10.29,
+        "range_width_60d_pct": 20.83,
+        "volume_vs_sma20": 0.935,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.436,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 1.97,
+        "atr_pct": 2.94,
+        "reasons": [
+          "within 9.5% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 62,
+        "qualified": false,
+        "pattern_proxies": [
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 6.05,
+        "range_width_10d_pct": 6.08,
+        "volume_vs_sma20": 0.935,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 1.97,
+        "reasons": [
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-04-01",
+        "actual_trading_anchor_date": "2026-04-01",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 154.79,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 160.36,
+        "weekly_vwap_proxy": 158.0,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 27
+    },
+    {
       "ticker": "HOMEFIRST.NS",
       "company_name": "Home First Finance Company India",
       "price_date": "2026-09-04",
@@ -2314,7 +2399,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 27
+      "rank": 28
     },
     {
       "ticker": "HONASA.NS",
@@ -2396,7 +2481,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 28
+      "rank": 29
     },
     {
       "ticker": "ICICIBANK.NS",
@@ -2481,7 +2566,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 29
+      "rank": 30
     },
     {
       "ticker": "INDIANB.NS",
@@ -2566,7 +2651,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 30
+      "rank": 31
     },
     {
       "ticker": "INDIGO.NS",
@@ -2648,7 +2733,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 31
+      "rank": 32
     },
     {
       "ticker": "JSWINFRA.NS",
@@ -2732,7 +2817,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 32
+      "rank": 33
     },
     {
       "ticker": "KAJARIACER.NS",
@@ -2815,7 +2900,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 33
+      "rank": 34
     },
     {
       "ticker": "KARURVYSYA.NS",
@@ -2900,7 +2985,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 34
+      "rank": 35
     },
     {
       "ticker": "KPIL.NS",
@@ -2983,7 +3068,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 35
+      "rank": 36
     },
     {
       "ticker": "LALPATHLAB.NS",
@@ -3067,7 +3152,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 36
+      "rank": 37
     },
     {
       "ticker": "LTF.NS",
@@ -3150,7 +3235,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 37
+      "rank": 38
     },
     {
       "ticker": "MANAPPURAM.NS",
@@ -3231,7 +3316,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 38
+      "rank": 39
     },
     {
       "ticker": "MINDACORP.NS",
@@ -3314,7 +3399,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 39
+      "rank": 40
     },
     {
       "ticker": "MOTHERSON.NS",
@@ -3396,7 +3481,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 40
+      "rank": 41
     },
     {
       "ticker": "MPHASIS.NS",
@@ -3480,7 +3565,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 41
+      "rank": 42
     },
     {
       "ticker": "NAVINFLUOR.NS",
@@ -3565,7 +3650,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 42
+      "rank": 43
     },
     {
       "ticker": "NYKAA.NS",
@@ -3647,7 +3732,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 43
+      "rank": 44
     },
     {
       "ticker": "PHOENIXLTD.NS",
@@ -3733,7 +3818,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 44
+      "rank": 45
     },
     {
       "ticker": "PIDILITIND.NS",
@@ -3817,7 +3902,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 45
+      "rank": 46
     },
     {
       "ticker": "POONAWALLA.NS",
@@ -3901,7 +3986,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 46
+      "rank": 47
     },
     {
       "ticker": "PRESTIGE.NS",
@@ -3983,7 +4068,90 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 47
+      "rank": 48
+    },
+    {
+      "ticker": "PRIVISCL.NS",
+      "company_name": "PRIVISCL",
+      "price_date": "2026-09-04",
+      "current_price": 3367.3,
+      "selected_strategy": "A",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 78,
+        "qualified": true,
+        "pattern_proxies": [
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 11.04,
+        "ath_reference": 3785.3,
+        "range_width_20d_pct": 11.34,
+        "range_width_60d_pct": 14.59,
+        "volume_vs_sma20": 0.728,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.657,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 0.53,
+        "atr_pct": 2.41,
+        "reasons": [
+          "within 11.0% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 48,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.77,
+        "range_width_10d_pct": 6.26,
+        "volume_vs_sma20": 0.728,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 0.53,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-17",
+        "actual_trading_anchor_date": "2026-03-17",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 3330.92,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 3375.97,
+        "weekly_vwap_proxy": 3381.48,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 49
     },
     {
       "ticker": "SAREGAMA.NS",
@@ -4067,7 +4235,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 48
+      "rank": 50
     },
     {
       "ticker": "SUNPHARMA.NS",
@@ -4152,7 +4320,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 49
+      "rank": 51
     },
     {
       "ticker": "TECHM.NS",
@@ -4237,7 +4405,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 50
+      "rank": 52
     },
     {
       "ticker": "TITAN.NS",
@@ -4321,7 +4489,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 51
+      "rank": 53
     },
     {
       "ticker": "TORNTPHARM.NS",
@@ -4405,7 +4573,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 52
+      "rank": 54
     },
     {
       "ticker": "UNITDSPR.NS",
@@ -4489,7 +4657,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 53
+      "rank": 55
     },
     {
       "ticker": "VIMTALABS.NS",
@@ -4571,7 +4739,169 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 54
+      "rank": 56
+    },
+    {
+      "ticker": "VMART.NS",
+      "company_name": "VMART",
+      "price_date": "2026-09-04",
+      "current_price": 824.2,
+      "selected_strategy": "A",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 78,
+        "qualified": true,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 27.06,
+        "ath_reference": 1130.0,
+        "range_width_20d_pct": 13.32,
+        "range_width_60d_pct": 27.28,
+        "volume_vs_sma20": 0.601,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.665,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 22.89,
+        "atr_pct": 3.47,
+        "reasons": [
+          "within 27.1% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 28,
+        "qualified": false,
+        "pattern_proxies": [
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 6.84,
+        "range_width_10d_pct": 8.0,
+        "volume_vs_sma20": 0.601,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 22.89,
+        "reasons": [
+          "10D flat-base behavior",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-30",
+        "actual_trading_anchor_date": "2026-03-30",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 616.07,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 828.17,
+        "weekly_vwap_proxy": 839.23,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 57
+    },
+    {
+      "ticker": "EDELWEISS.NS",
+      "company_name": "EDELWEISS",
+      "price_date": "2026-09-04",
+      "current_price": 136.08,
+      "selected_strategy": "A",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 76,
+        "qualified": true,
+        "pattern_proxies": [],
+        "distance_from_ath_pct": 6.49,
+        "ath_reference": 145.53,
+        "range_width_20d_pct": 17.95,
+        "range_width_60d_pct": 23.43,
+        "volume_vs_sma20": 1.888,
+        "volume_dryup_ratio_10d_vs_prior30d": 1.988,
+        "breakout_above_prev20d_high": true,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 23.09,
+        "atr_pct": 3.71,
+        "reasons": [
+          "within 6.5% of ATH",
+          "60D consolidation",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 68,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 12.56,
+        "range_width_10d_pct": 12.56,
+        "volume_vs_sma20": 1.888,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": true,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 23.09,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 119.15,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 136.36,
+        "weekly_vwap_proxy": 131.36,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 58
     },
     {
       "ticker": "FLUOROCHEM.NS",
@@ -4653,7 +4983,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 55
+      "rank": 59
     },
     {
       "ticker": "GRANULES.NS",
@@ -4737,7 +5067,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 56
+      "rank": 60
     },
     {
       "ticker": "MEDANTA.NS",
@@ -4819,7 +5149,171 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 57
+      "rank": 61
+    },
+    {
+      "ticker": "SKIPPER.NS",
+      "company_name": "SKIPPER",
+      "price_date": "2026-09-04",
+      "current_price": 591.1,
+      "selected_strategy": "A",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 76,
+        "qualified": true,
+        "pattern_proxies": [],
+        "distance_from_ath_pct": 11.11,
+        "ath_reference": 665.0,
+        "range_width_20d_pct": 20.27,
+        "range_width_60d_pct": 21.0,
+        "volume_vs_sma20": 7.427,
+        "volume_dryup_ratio_10d_vs_prior30d": 3.144,
+        "breakout_above_prev20d_high": true,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 7.35,
+        "atr_pct": 4.21,
+        "reasons": [
+          "within 11.1% of ATH",
+          "60D consolidation",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 68,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 16.21,
+        "range_width_10d_pct": 16.21,
+        "volume_vs_sma20": 7.427,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": true,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 7.35,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-04-08",
+        "actual_trading_anchor_date": "2026-04-08",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 526.02,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 577.95,
+        "weekly_vwap_proxy": 570.19,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 62
+    },
+    {
+      "ticker": "SMLMAH.NS",
+      "company_name": "SMLMAH",
+      "price_date": "2026-09-04",
+      "current_price": 6298.5,
+      "selected_strategy": "A",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 76,
+        "qualified": true,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 0.0,
+        "ath_reference": 6298.5,
+        "range_width_20d_pct": 24.46,
+        "range_width_60d_pct": 67.25,
+        "volume_vs_sma20": 3.19,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.535,
+        "breakout_above_prev20d_high": true,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 66.15,
+        "atr_pct": 4.54,
+        "reasons": [
+          "within 0.0% of ATH",
+          "volume dry-up",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 68,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 24.01,
+        "range_width_10d_pct": 24.01,
+        "volume_vs_sma20": 3.19,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": true,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 66.15,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-07-30",
+        "actual_trading_anchor_date": "2026-07-30",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 5507.1,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 6105.5,
+        "weekly_vwap_proxy": 5701.01,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 63
     },
     {
       "ticker": "WOCKPHARMA.NS",
@@ -4900,7 +5394,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 58
+      "rank": 64
     },
     {
       "ticker": "SUNDARMFIN.NS",
@@ -4987,7 +5481,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 59
+      "rank": 65
     },
     {
       "ticker": "THEJO.NS",
@@ -5072,7 +5566,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 60
+      "rank": 66
     },
     {
       "ticker": "CRISIL.NS",
@@ -5158,7 +5652,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 61
+      "rank": 67
     },
     {
       "ticker": "GLAND.NS",
@@ -5243,7 +5737,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 62
+      "rank": 68
     },
     {
       "ticker": "HEIDELBERG.NS",
@@ -5328,7 +5822,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 63
+      "rank": 69
     },
     {
       "ticker": "ABSLAMC.NS",
@@ -5414,7 +5908,91 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 64
+      "rank": 70
+    },
+    {
+      "ticker": "AGARWALEYE.NS",
+      "company_name": "AGARWALEYE",
+      "price_date": "2026-09-04",
+      "current_price": 514.1,
+      "selected_strategy": "B",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 9.49,
+        "ath_reference": 568.0,
+        "range_width_20d_pct": 15.99,
+        "range_width_60d_pct": 29.92,
+        "volume_vs_sma20": 0.028,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.316,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 10.49,
+        "atr_pct": 2.98,
+        "reasons": [
+          "within 9.5% of ATH",
+          "60D consolidation",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 70,
+        "qualified": true,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 4.48,
+        "range_width_10d_pct": 7.15,
+        "volume_vs_sma20": 0.028,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 10.49,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-30",
+        "actual_trading_anchor_date": "2026-03-30",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 502.7,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 512.62,
+        "weekly_vwap_proxy": 512.59,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 71
     },
     {
       "ticker": "ANANDRATHI.NS",
@@ -5500,7 +6078,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 65
+      "rank": 72
     },
     {
       "ticker": "ARIHANTCAP.NS",
@@ -5585,7 +6163,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 66
+      "rank": 73
     },
     {
       "ticker": "CDSL.NS",
@@ -5670,7 +6248,92 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 67
+      "rank": 74
+    },
+    {
+      "ticker": "CERA.NS",
+      "company_name": "CERA",
+      "price_date": "2026-09-04",
+      "current_price": 5787.5,
+      "selected_strategy": "B",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 56,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 46.36,
+        "ath_reference": 10789.95,
+        "range_width_20d_pct": 9.78,
+        "range_width_60d_pct": 20.36,
+        "volume_vs_sma20": 2.102,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.658,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": false,
+        "rs_excess_63d_pct_points": 2.4,
+        "atr_pct": 2.58,
+        "reasons": [
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "volume expansion",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 70,
+        "qualified": true,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.17,
+        "range_width_10d_pct": 6.04,
+        "volume_vs_sma20": 2.102,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": false,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 2.4,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "5D breakout",
+          "volume expansion",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-30",
+        "actual_trading_anchor_date": "2026-03-30",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 5799.8,
+        "price_above_avwap": false
+      },
+      "vwap": {
+        "daily_vwap_proxy": 5804.83,
+        "weekly_vwap_proxy": 5754.83,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 75
     },
     {
       "ticker": "GNFC.NS",
@@ -5754,7 +6417,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 68
+      "rank": 76
     },
     {
       "ticker": "GRASIM.NS",
@@ -5840,7 +6503,92 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 69
+      "rank": 77
+    },
+    {
+      "ticker": "INDIGOPNTS.NS",
+      "company_name": "INDIGOPNTS",
+      "price_date": "2026-09-04",
+      "current_price": 1185.8,
+      "selected_strategy": "B",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 58,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 31.07,
+        "ath_reference": 1720.3,
+        "range_width_20d_pct": 9.63,
+        "range_width_60d_pct": 22.58,
+        "volume_vs_sma20": 0.467,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.51,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 24.07,
+        "atr_pct": 3.12,
+        "reasons": [
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 70,
+        "qualified": true,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 6.0,
+        "range_width_10d_pct": 6.76,
+        "volume_vs_sma20": 0.467,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 24.07,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-08-14",
+        "actual_trading_anchor_date": "2026-08-14",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 1166.05,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 1183.6,
+        "weekly_vwap_proxy": 1168.93,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 78
     },
     {
       "ticker": "IPCALAB.NS",
@@ -5924,7 +6672,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 70
+      "rank": 79
     },
     {
       "ticker": "JSWSTEEL.NS",
@@ -6010,7 +6758,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 71
+      "rank": 80
     },
     {
       "ticker": "KOTAKBANK.NS",
@@ -6095,7 +6843,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 72
+      "rank": 81
     },
     {
       "ticker": "METROPOLIS.NS",
@@ -6179,7 +6927,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 73
+      "rank": 82
     },
     {
       "ticker": "MOTILALOFS.NS",
@@ -6262,7 +7010,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 74
+      "rank": 83
     },
     {
       "ticker": "PPLPHARMA.NS",
@@ -6347,7 +7095,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 75
+      "rank": 84
     },
     {
       "ticker": "PVRINOX.NS",
@@ -6429,7 +7177,89 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 76
+      "rank": 85
+    },
+    {
+      "ticker": "SMARTWORKS.NS",
+      "company_name": "SMARTWORKS",
+      "price_date": "2026-09-04",
+      "current_price": 541.5,
+      "selected_strategy": "B",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [],
+        "distance_from_ath_pct": 12.52,
+        "ath_reference": 619.0,
+        "range_width_20d_pct": 20.8,
+        "range_width_60d_pct": 26.48,
+        "volume_vs_sma20": 0.366,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.795,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 16.62,
+        "atr_pct": 3.02,
+        "reasons": [
+          "within 12.5% of ATH",
+          "60D consolidation",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 70,
+        "qualified": true,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.13,
+        "range_width_10d_pct": 8.79,
+        "volume_vs_sma20": 0.366,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 16.62,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-30",
+        "actual_trading_anchor_date": "2026-03-30",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 474.59,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 541.85,
+        "weekly_vwap_proxy": 532.62,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 86
     },
     {
       "ticker": "ACE.NS",
@@ -6509,7 +7339,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 77
+      "rank": 87
     },
     {
       "ticker": "ACMESOLAR.NS",
@@ -6591,7 +7421,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 78
+      "rank": 88
     },
     {
       "ticker": "ACUTAAS.NS",
@@ -6671,7 +7501,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 79
+      "rank": 89
     },
     {
       "ticker": "AMBER.NS",
@@ -6753,7 +7583,91 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 80
+      "rank": 90
+    },
+    {
+      "ticker": "APOLLO.NS",
+      "company_name": "APOLLO",
+      "price_date": "2026-09-04",
+      "current_price": 388.9,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 68,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 16.63,
+        "ath_reference": 466.5,
+        "range_width_20d_pct": 8.91,
+        "range_width_60d_pct": 24.73,
+        "volume_vs_sma20": 1.036,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.845,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": -7.8,
+        "atr_pct": 2.82,
+        "reasons": [
+          "within 16.6% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP"
+        ]
+      },
+      "strategy_b": {
+        "score": 48,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy",
+          "Ascending Triangle proxy"
+        ],
+        "range_width_5d_pct": 4.97,
+        "range_width_10d_pct": 6.25,
+        "volume_vs_sma20": 1.036,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": -7.8,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "above AVWAP",
+          "above weekly VWAP proxy"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-04-08",
+        "actual_trading_anchor_date": "2026-04-08",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 370.58,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 388.45,
+        "weekly_vwap_proxy": 384.99,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 91
     },
     {
       "ticker": "ASIANPAINT.NS",
@@ -6834,7 +7748,87 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 81
+      "rank": 92
+    },
+    {
+      "ticker": "BALAMINES.NS",
+      "company_name": "BALAMINES",
+      "price_date": "2026-09-04",
+      "current_price": 2525.2,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 64,
+        "qualified": false,
+        "pattern_proxies": [],
+        "distance_from_ath_pct": 7.67,
+        "ath_reference": 2735.0,
+        "range_width_20d_pct": 27.75,
+        "range_width_60d_pct": 35.28,
+        "volume_vs_sma20": 2.626,
+        "volume_dryup_ratio_10d_vs_prior30d": 1.749,
+        "breakout_above_prev20d_high": true,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 17.42,
+        "atr_pct": 4.31,
+        "reasons": [
+          "within 7.7% of ATH",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 68,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 11.11,
+        "range_width_10d_pct": 22.24,
+        "volume_vs_sma20": 2.626,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": true,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 17.42,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-05-14",
+        "actual_trading_anchor_date": "2026-05-14",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 2054.02,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 2502.4,
+        "weekly_vwap_proxy": 2439.93,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 93
     },
     {
       "ticker": "BEL.NS",
@@ -6916,7 +7910,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 82
+      "rank": 94
     },
     {
       "ticker": "CGPOWER.NS",
@@ -6999,7 +7993,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 83
+      "rank": 95
     },
     {
       "ticker": "CINELINE.NS",
@@ -7080,7 +8074,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 84
+      "rank": 96
     },
     {
       "ticker": "GAIL.NS",
@@ -7162,7 +8156,89 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 85
+      "rank": 97
+    },
+    {
+      "ticker": "GMMPFAUDLR.NS",
+      "company_name": "GMMPFAUDLR",
+      "price_date": "2026-09-04",
+      "current_price": 1147.9,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 56,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 39.52,
+        "ath_reference": 1897.95,
+        "range_width_20d_pct": 22.01,
+        "range_width_60d_pct": 56.89,
+        "volume_vs_sma20": 4.809,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.693,
+        "breakout_above_prev20d_high": true,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 46.86,
+        "atr_pct": 3.76,
+        "reasons": [
+          "volume dry-up",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 68,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 16.22,
+        "range_width_10d_pct": 19.78,
+        "volume_vs_sma20": 4.809,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": true,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 46.86,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-06-11",
+        "actual_trading_anchor_date": "2026-06-11",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 950.21,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 1132.13,
+        "weekly_vwap_proxy": 1099.78,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 98
     },
     {
       "ticker": "JINDALSTEL.NS",
@@ -7246,7 +8322,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 86
+      "rank": 99
     },
     {
       "ticker": "KAMDHENU.NS",
@@ -7327,7 +8403,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 87
+      "rank": 100
     },
     {
       "ticker": "LICHSGFIN.NS",
@@ -7407,7 +8483,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 88
+      "rank": 101
     },
     {
       "ticker": "MAHSEAMLES.NS",
@@ -7487,7 +8563,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 89
+      "rank": 102
     },
     {
       "ticker": "MENONBE.NS",
@@ -7569,7 +8645,87 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 90
+      "rank": 103
+    },
+    {
+      "ticker": "MIDHANI.NS",
+      "company_name": "MIDHANI",
+      "price_date": "2026-09-04",
+      "current_price": 418.8,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 68,
+        "qualified": false,
+        "pattern_proxies": [],
+        "distance_from_ath_pct": 23.51,
+        "ath_reference": 547.5,
+        "range_width_20d_pct": 14.49,
+        "range_width_60d_pct": 18.11,
+        "volume_vs_sma20": 0.319,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.41,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": -3.84,
+        "atr_pct": 3.36,
+        "reasons": [
+          "within 23.5% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP"
+        ]
+      },
+      "strategy_b": {
+        "score": 48,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.31,
+        "range_width_10d_pct": 6.75,
+        "volume_vs_sma20": 0.319,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": -3.84,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "above AVWAP",
+          "above weekly VWAP proxy"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-04-01",
+        "actual_trading_anchor_date": "2026-04-01",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 412.72,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 421.1,
+        "weekly_vwap_proxy": 417.75,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 104
     },
     {
       "ticker": "MUKKA.NS",
@@ -7648,7 +8804,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 91
+      "rank": 105
     },
     {
       "ticker": "NIACL.NS",
@@ -7730,7 +8886,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 92
+      "rank": 106
     },
     {
       "ticker": "RADHIKAJWE.NS",
@@ -7811,7 +8967,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 93
+      "rank": 107
     },
     {
       "ticker": "SHANTIGEAR.NS",
@@ -7891,7 +9047,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 94
+      "rank": 108
     },
     {
       "ticker": "TEJASNET.NS",
@@ -7970,7 +9126,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 95
+      "rank": 109
     },
     {
       "ticker": "TITAGARH.NS",
@@ -8055,7 +9211,87 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 96
+      "rank": 110
+    },
+    {
+      "ticker": "WELENT.NS",
+      "company_name": "WELENT",
+      "price_date": "2026-09-04",
+      "current_price": 813.6,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 64,
+        "qualified": false,
+        "pattern_proxies": [],
+        "distance_from_ath_pct": 1.38,
+        "ath_reference": 825.0,
+        "range_width_20d_pct": 48.09,
+        "range_width_60d_pct": 50.77,
+        "volume_vs_sma20": 3.356,
+        "volume_dryup_ratio_10d_vs_prior30d": 1.898,
+        "breakout_above_prev20d_high": true,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 49.87,
+        "atr_pct": 3.72,
+        "reasons": [
+          "within 1.4% of ATH",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 68,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 24.05,
+        "range_width_10d_pct": 32.51,
+        "volume_vs_sma20": 3.356,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": true,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 49.87,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "20D breakout",
+          "volume expansion",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 584.39,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 798.67,
+        "weekly_vwap_proxy": 762.15,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 111
     },
     {
       "ticker": "WHEELS.NS",
@@ -8135,7 +9371,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 97
+      "rank": 112
     },
     {
       "ticker": "3MINDIA.NS",
@@ -8214,7 +9450,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 98
+      "rank": 113
     },
     {
       "ticker": "ABDL.NS",
@@ -8297,7 +9533,90 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 99
+      "rank": 114
+    },
+    {
+      "ticker": "AETHER.NS",
+      "company_name": "AETHER",
+      "price_date": "2026-09-04",
+      "current_price": 1625.6,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 5.32,
+        "ath_reference": 1717.0,
+        "range_width_20d_pct": 9.21,
+        "range_width_60d_pct": 51.28,
+        "volume_vs_sma20": 0.962,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.741,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 39.69,
+        "atr_pct": 3.27,
+        "reasons": [
+          "within 5.3% of ATH",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 48,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.79,
+        "range_width_10d_pct": 6.36,
+        "volume_vs_sma20": 0.962,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 39.69,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-17",
+        "actual_trading_anchor_date": "2026-03-17",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 1301.32,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 1635.4,
+        "weekly_vwap_proxy": 1664.69,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 115
     },
     {
       "ticker": "APARINDS.NS",
@@ -8378,7 +9697,161 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 100
+      "rank": 116
+    },
+    {
+      "ticker": "ARVIND.NS",
+      "company_name": "ARVIND",
+      "price_date": "2026-09-04",
+      "current_price": 552.95,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 7.84,
+        "ath_reference": 600.0,
+        "range_width_20d_pct": 12.93,
+        "range_width_60d_pct": 24.91,
+        "volume_vs_sma20": 0.381,
+        "volume_dryup_ratio_10d_vs_prior30d": 1.08,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 8.86,
+        "atr_pct": 3.6,
+        "reasons": [
+          "within 7.8% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 16,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 7.53,
+        "range_width_10d_pct": 10.12,
+        "volume_vs_sma20": 0.381,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 8.86,
+        "reasons": [
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 467.82,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 556.32,
+        "weekly_vwap_proxy": 560.18,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 117
+    },
+    {
+      "ticker": "ASKAUTOLTD.NS",
+      "company_name": "ASKAUTOLTD",
+      "price_date": "2026-09-04",
+      "current_price": 618.85,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 10.01,
+        "ath_reference": 687.7,
+        "range_width_20d_pct": 12.72,
+        "range_width_60d_pct": 57.89,
+        "volume_vs_sma20": 0.419,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.234,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 42.12,
+        "atr_pct": 4.01,
+        "reasons": [
+          "within 10.0% of ATH",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 16,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 7.86,
+        "range_width_10d_pct": 10.8,
+        "volume_vs_sma20": 0.419,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 42.12,
+        "reasons": [
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-23",
+        "actual_trading_anchor_date": "2026-03-23",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 569.61,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 624.33,
+        "weekly_vwap_proxy": 642.6,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 118
     },
     {
       "ticker": "AUBANK.NS",
@@ -8461,7 +9934,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 101
+      "rank": 119
     },
     {
       "ticker": "AUROPHARMA.NS",
@@ -8545,7 +10018,90 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 102
+      "rank": 120
+    },
+    {
+      "ticker": "AVL.NS",
+      "company_name": "AVL",
+      "price_date": "2026-09-04",
+      "current_price": 600.05,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 14.89,
+        "ath_reference": 705.0,
+        "range_width_20d_pct": 10.66,
+        "range_width_60d_pct": 28.76,
+        "volume_vs_sma20": 1.337,
+        "volume_dryup_ratio_10d_vs_prior30d": 1.109,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 8.37,
+        "atr_pct": 3.07,
+        "reasons": [
+          "within 14.9% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 48,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.95,
+        "range_width_10d_pct": 8.37,
+        "volume_vs_sma20": 1.337,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 8.37,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-17",
+        "actual_trading_anchor_date": "2026-03-17",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 575.97,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 598.15,
+        "weekly_vwap_proxy": 600.14,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 121
     },
     {
       "ticker": "BAJAJ-AUTO.NS",
@@ -8628,7 +10184,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 103
+      "rank": 122
     },
     {
       "ticker": "BAJAJHLDNG.NS",
@@ -8712,7 +10268,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 104
+      "rank": 123
     },
     {
       "ticker": "BELRISE.NS",
@@ -8794,7 +10350,88 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 105
+      "rank": 124
+    },
+    {
+      "ticker": "BLACKBUCK.NS",
+      "company_name": "BLACKBUCK",
+      "price_date": "2026-09-04",
+      "current_price": 586.1,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 21.64,
+        "ath_reference": 748.0,
+        "range_width_20d_pct": 15.1,
+        "range_width_60d_pct": 24.25,
+        "volume_vs_sma20": 0.309,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.548,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 11.04,
+        "atr_pct": 3.14,
+        "reasons": [
+          "within 21.6% of ATH",
+          "60D consolidation",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 44,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range"
+        ],
+        "range_width_5d_pct": 4.46,
+        "range_width_10d_pct": 12.09,
+        "volume_vs_sma20": 0.309,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 11.04,
+        "reasons": [
+          "4-5 day tight range",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-05-22",
+        "actual_trading_anchor_date": "2026-05-22",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 560.84,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 585.02,
+        "weekly_vwap_proxy": 583.49,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 125
     },
     {
       "ticker": "BPCL.NS",
@@ -8878,7 +10515,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 106
+      "rank": 126
     },
     {
       "ticker": "COFORGE.NS",
@@ -8961,7 +10598,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 107
+      "rank": 127
     },
     {
       "ticker": "CRAFTSMAN.NS",
@@ -9043,7 +10680,89 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 108
+      "rank": 128
+    },
+    {
+      "ticker": "CRAMC.NS",
+      "company_name": "CRAMC",
+      "price_date": "2026-09-04",
+      "current_price": 251.5,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 28.83,
+        "ath_reference": 353.4,
+        "range_width_20d_pct": 7.15,
+        "range_width_60d_pct": 20.99,
+        "volume_vs_sma20": 0.658,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.166,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": false,
+        "rs_excess_63d_pct_points": 0.67,
+        "atr_pct": 2.43,
+        "reasons": [
+          "within 28.8% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 40,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 4.8,
+        "range_width_10d_pct": 6.4,
+        "volume_vs_sma20": 0.658,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": false,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 0.67,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-07-22",
+        "actual_trading_anchor_date": "2026-07-22",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 271.15,
+        "price_above_avwap": false
+      },
+      "vwap": {
+        "daily_vwap_proxy": 251.83,
+        "weekly_vwap_proxy": 254.68,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 129
     },
     {
       "ticker": "CUB.NS",
@@ -9120,7 +10839,87 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 109
+      "rank": 130
+    },
+    {
+      "ticker": "DYNAMATECH.NS",
+      "company_name": "DYNAMATECH",
+      "price_date": "2026-09-04",
+      "current_price": 11654.0,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [],
+        "distance_from_ath_pct": 9.48,
+        "ath_reference": 12875.0,
+        "range_width_20d_pct": 17.97,
+        "range_width_60d_pct": 25.6,
+        "volume_vs_sma20": 0.423,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.683,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 11.2,
+        "atr_pct": 3.66,
+        "reasons": [
+          "within 9.5% of ATH",
+          "60D consolidation",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 42,
+        "qualified": false,
+        "pattern_proxies": [
+          "Flat Base proxy",
+          "Ascending Triangle proxy"
+        ],
+        "range_width_5d_pct": 7.27,
+        "range_width_10d_pct": 7.27,
+        "volume_vs_sma20": 0.423,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 11.2,
+        "reasons": [
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-04-08",
+        "actual_trading_anchor_date": "2026-04-08",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 11082.11,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 11662.33,
+        "weekly_vwap_proxy": 11662.31,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 131
     },
     {
       "ticker": "EICHERMOT.NS",
@@ -9201,7 +11000,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 110
+      "rank": 132
     },
     {
       "ticker": "FEDERALBNK.NS",
@@ -9284,7 +11083,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 111
+      "rank": 133
     },
     {
       "ticker": "FINEORG.NS",
@@ -9365,7 +11164,84 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 112
+      "rank": 134
+    },
+    {
+      "ticker": "GAEL.NS",
+      "company_name": "GAEL",
+      "price_date": "2026-09-04",
+      "current_price": 167.81,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 20.32,
+        "ath_reference": 210.6,
+        "range_width_20d_pct": 12.12,
+        "range_width_60d_pct": 34.34,
+        "volume_vs_sma20": 0.414,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.574,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 2.49,
+        "atr_pct": 4.02,
+        "reasons": [
+          "within 20.3% of ATH",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 16,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 6.46,
+        "range_width_10d_pct": 11.46,
+        "volume_vs_sma20": 0.414,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 2.49,
+        "reasons": [
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-17",
+        "actual_trading_anchor_date": "2026-03-17",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 161.5,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 168.74,
+        "weekly_vwap_proxy": 172.38,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 135
     },
     {
       "ticker": "GLENMARK.NS",
@@ -9446,7 +11322,92 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 113
+      "rank": 136
+    },
+    {
+      "ticker": "GOKEX.NS",
+      "company_name": "GOKEX",
+      "price_date": "2026-09-04",
+      "current_price": 789.2,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 56,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 37.47,
+        "ath_reference": 1262.15,
+        "range_width_20d_pct": 11.13,
+        "range_width_60d_pct": 31.18,
+        "volume_vs_sma20": 1.795,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.713,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 13.35,
+        "atr_pct": 2.82,
+        "reasons": [
+          "20D tight range",
+          "volume dry-up",
+          "volume expansion",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.18,
+        "range_width_10d_pct": 5.54,
+        "volume_vs_sma20": 1.795,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 13.35,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "volume expansion",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 751.99,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 786.73,
+        "weekly_vwap_proxy": 781.54,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 137
     },
     {
       "ticker": "HEG.NS",
@@ -9528,7 +11489,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 114
+      "rank": 138
     },
     {
       "ticker": "HYUNDAI.NS",
@@ -9611,7 +11572,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 115
+      "rank": 139
     },
     {
       "ticker": "IDFCFIRSTB.NS",
@@ -9694,7 +11655,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 116
+      "rank": 140
     },
     {
       "ticker": "INDHOTEL.NS",
@@ -9777,7 +11738,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 117
+      "rank": 141
     },
     {
       "ticker": "KALYANKJIL.NS",
@@ -9856,7 +11817,83 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 118
+      "rank": 142
+    },
+    {
+      "ticker": "LLOYDSENT.NS",
+      "company_name": "LLOYDSENT",
+      "price_date": "2026-09-04",
+      "current_price": 74.23,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [],
+        "distance_from_ath_pct": 23.0,
+        "ath_reference": 96.4,
+        "range_width_20d_pct": 21.85,
+        "range_width_60d_pct": 24.91,
+        "volume_vs_sma20": 1.079,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.462,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 12.45,
+        "atr_pct": 3.69,
+        "reasons": [
+          "within 23.0% of ATH",
+          "60D consolidation",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 24,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 7.45,
+        "range_width_10d_pct": 11.93,
+        "volume_vs_sma20": 1.079,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 12.45,
+        "reasons": [
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 65.77,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 73.57,
+        "weekly_vwap_proxy": 72.31,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 143
     },
     {
       "ticker": "LODHA.NS",
@@ -9934,7 +11971,88 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 119
+      "rank": 144
+    },
+    {
+      "ticker": "LOTUSDEV.NS",
+      "company_name": "LOTUSDEV",
+      "price_date": "2026-09-04",
+      "current_price": 193.25,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 11.55,
+        "ath_reference": 218.49,
+        "range_width_20d_pct": 21.36,
+        "range_width_60d_pct": 52.56,
+        "volume_vs_sma20": 1.323,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.233,
+        "breakout_above_prev20d_high": true,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 40.66,
+        "atr_pct": 4.23,
+        "reasons": [
+          "within 11.6% of ATH",
+          "volume dry-up",
+          "20D breakout",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 58,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 11.55,
+        "range_width_10d_pct": 17.85,
+        "volume_vs_sma20": 1.323,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": true,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 40.66,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "20D breakout",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 156.36,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 189.89,
+        "weekly_vwap_proxy": 184.51,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 145
     },
     {
       "ticker": "M&M.NS",
@@ -10011,7 +12129,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 120
+      "rank": 146
     },
     {
       "ticker": "MAHABANK.NS",
@@ -10093,7 +12211,91 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 121
+      "rank": 147
+    },
+    {
+      "ticker": "MAHSCOOTER.NS",
+      "company_name": "MAHSCOOTER",
+      "price_date": "2026-09-04",
+      "current_price": 13602.0,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 26.63,
+        "ath_reference": 18538.0,
+        "range_width_20d_pct": 7.48,
+        "range_width_60d_pct": 15.04,
+        "volume_vs_sma20": 0.294,
+        "volume_dryup_ratio_10d_vs_prior30d": 1.088,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 8.44,
+        "atr_pct": 2.52,
+        "reasons": [
+          "within 26.6% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 62,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 3.97,
+        "range_width_10d_pct": 7.48,
+        "volume_vs_sma20": 0.294,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 8.44,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-04-02",
+        "actual_trading_anchor_date": "2026-04-02",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 12855.34,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 13639.67,
+        "weekly_vwap_proxy": 13689.11,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 148
     },
     {
       "ticker": "MTARTECH.NS",
@@ -10178,7 +12380,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 122
+      "rank": 149
     },
     {
       "ticker": "NAM-INDIA.NS",
@@ -10256,7 +12458,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 123
+      "rank": 150
     },
     {
       "ticker": "NAUKRI.NS",
@@ -10338,7 +12540,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 124
+      "rank": 151
     },
     {
       "ticker": "NAZARA.NS",
@@ -10420,7 +12622,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 125
+      "rank": 152
     },
     {
       "ticker": "NEULANDLAB.NS",
@@ -10503,7 +12705,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 126
+      "rank": 153
     },
     {
       "ticker": "OBEROIRLTY.NS",
@@ -10587,7 +12789,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 127
+      "rank": 154
     },
     {
       "ticker": "OFSS.NS",
@@ -10669,7 +12871,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 128
+      "rank": 155
     },
     {
       "ticker": "PETRONET.NS",
@@ -10751,7 +12953,165 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 129
+      "rank": 156
+    },
+    {
+      "ticker": "PGIL.NS",
+      "company_name": "PGIL",
+      "price_date": "2026-09-04",
+      "current_price": 2278.3,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 10.29,
+        "ath_reference": 2539.6,
+        "range_width_20d_pct": 11.02,
+        "range_width_60d_pct": 55.71,
+        "volume_vs_sma20": 1.098,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.461,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 36.68,
+        "atr_pct": 3.9,
+        "reasons": [
+          "within 10.3% of ATH",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 16,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 9.99,
+        "range_width_10d_pct": 10.3,
+        "volume_vs_sma20": 1.098,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 36.68,
+        "reasons": [
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 1922.39,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 2291.9,
+        "weekly_vwap_proxy": 2380.65,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 157
+    },
+    {
+      "ticker": "PRICOLLTD.NS",
+      "company_name": "PRICOLLTD",
+      "price_date": "2026-09-04",
+      "current_price": 764.95,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 7.05,
+        "ath_reference": 823.0,
+        "range_width_20d_pct": 13.24,
+        "range_width_60d_pct": 48.5,
+        "volume_vs_sma20": 0.554,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.53,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 35.22,
+        "atr_pct": 3.52,
+        "reasons": [
+          "within 7.1% of ATH",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 28,
+        "qualified": false,
+        "pattern_proxies": [
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 9.23,
+        "range_width_10d_pct": 9.23,
+        "volume_vs_sma20": 0.554,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 35.22,
+        "reasons": [
+          "10D flat-base behavior",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-05-15",
+        "actual_trading_anchor_date": "2026-05-15",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 640.2,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 763.58,
+        "weekly_vwap_proxy": 784.54,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 158
     },
     {
       "ticker": "RADICO.NS",
@@ -10835,7 +13195,167 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 130
+      "rank": 159
+    },
+    {
+      "ticker": "RAIN.NS",
+      "company_name": "RAIN",
+      "price_date": "2026-09-04",
+      "current_price": 215.72,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 14.4,
+        "ath_reference": 252.0,
+        "range_width_20d_pct": 14.97,
+        "range_width_60d_pct": 40.27,
+        "volume_vs_sma20": 0.878,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.733,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 8.65,
+        "atr_pct": 4.23,
+        "reasons": [
+          "within 14.4% of ATH",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 36,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 12.3,
+        "range_width_10d_pct": 13.07,
+        "volume_vs_sma20": 0.878,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 8.65,
+        "reasons": [
+          "5D breakout",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-05-11",
+        "actual_trading_anchor_date": "2026-05-11",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 193.49,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 214.37,
+        "weekly_vwap_proxy": 206.54,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 160
+    },
+    {
+      "ticker": "RELIGARE.NS",
+      "company_name": "RELIGARE",
+      "price_date": "2026-09-04",
+      "current_price": 257.08,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 19.66,
+        "ath_reference": 320.0,
+        "range_width_20d_pct": 15.74,
+        "range_width_60d_pct": 25.42,
+        "volume_vs_sma20": 1.26,
+        "volume_dryup_ratio_10d_vs_prior30d": 2.021,
+        "breakout_above_prev20d_high": true,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 11.06,
+        "atr_pct": 3.24,
+        "reasons": [
+          "within 19.7% of ATH",
+          "60D consolidation",
+          "20D breakout",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 58,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 10.43,
+        "range_width_10d_pct": 15.74,
+        "volume_vs_sma20": 1.26,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": true,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 11.06,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "20D breakout",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-23",
+        "actual_trading_anchor_date": "2026-03-23",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 235.96,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 254.53,
+        "weekly_vwap_proxy": 246.42,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 161
     },
     {
       "ticker": "SAGILITY.NS",
@@ -10917,7 +13437,169 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 131
+      "rank": 162
+    },
+    {
+      "ticker": "SANOFICONR.NS",
+      "company_name": "SANOFICONR",
+      "price_date": "2026-09-04",
+      "current_price": 4201.7,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 28.72,
+        "ath_reference": 5894.5,
+        "range_width_20d_pct": 12.34,
+        "range_width_60d_pct": 22.57,
+        "volume_vs_sma20": 1.595,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.388,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": false,
+        "rs_excess_63d_pct_points": -14.33,
+        "atr_pct": 2.43,
+        "reasons": [
+          "within 28.7% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "volume expansion"
+        ]
+      },
+      "strategy_b": {
+        "score": 50,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.35,
+        "range_width_10d_pct": 5.69,
+        "volume_vs_sma20": 1.595,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": false,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": -14.33,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "volume expansion",
+          "above weekly VWAP proxy"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-26",
+        "actual_trading_anchor_date": "2026-02-26",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 4561.95,
+        "price_above_avwap": false
+      },
+      "vwap": {
+        "daily_vwap_proxy": 4181.53,
+        "weekly_vwap_proxy": 4179.58,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 163
+    },
+    {
+      "ticker": "SANSERA.NS",
+      "company_name": "SANSERA",
+      "price_date": "2026-09-04",
+      "current_price": 3782.6,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 7.4,
+        "ath_reference": 4084.9,
+        "range_width_20d_pct": 13.47,
+        "range_width_60d_pct": 45.01,
+        "volume_vs_sma20": 0.446,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.498,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 26.82,
+        "atr_pct": 3.67,
+        "reasons": [
+          "within 7.4% of ATH",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 28,
+        "qualified": false,
+        "pattern_proxies": [
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 9.41,
+        "range_width_10d_pct": 9.41,
+        "volume_vs_sma20": 0.446,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 26.82,
+        "reasons": [
+          "10D flat-base behavior",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 2801.04,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 3783.37,
+        "weekly_vwap_proxy": 3902.65,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 164
     },
     {
       "ticker": "SBFC.NS",
@@ -10994,7 +13676,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 132
+      "rank": 165
     },
     {
       "ticker": "SBIN.NS",
@@ -11075,7 +13757,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 133
+      "rank": 166
     },
     {
       "ticker": "SHYAMMETL.NS",
@@ -11156,7 +13838,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 134
+      "rank": 167
     },
     {
       "ticker": "SIEMENS.NS",
@@ -11240,7 +13922,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 135
+      "rank": 168
     },
     {
       "ticker": "SONACOMS.NS",
@@ -11321,7 +14003,90 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 136
+      "rank": 169
+    },
+    {
+      "ticker": "SOUTHBANK.NS",
+      "company_name": "SOUTHBANK",
+      "price_date": "2026-09-04",
+      "current_price": 47.29,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 5.23,
+        "ath_reference": 49.9,
+        "range_width_20d_pct": 9.44,
+        "range_width_60d_pct": 16.02,
+        "volume_vs_sma20": 1.053,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.912,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 4.64,
+        "atr_pct": 2.4,
+        "reasons": [
+          "within 5.2% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 50,
+        "qualified": false,
+        "pattern_proxies": [
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 7.48,
+        "range_width_10d_pct": 9.44,
+        "volume_vs_sma20": 1.053,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 4.64,
+        "reasons": [
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-23",
+        "actual_trading_anchor_date": "2026-03-23",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 43.14,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 47.62,
+        "weekly_vwap_proxy": 46.63,
+        "price_above_daily_vwap_proxy": false,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 170
     },
     {
       "ticker": "STARHEALTH.NS",
@@ -11403,7 +14168,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 137
+      "rank": 171
     },
     {
       "ticker": "UNOMINDA.NS",
@@ -11484,7 +14249,84 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 138
+      "rank": 172
+    },
+    {
+      "ticker": "VARROC.NS",
+      "company_name": "VARROC",
+      "price_date": "2026-09-04",
+      "current_price": 826.35,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 7.77,
+        "ath_reference": 896.0,
+        "range_width_20d_pct": 12.62,
+        "range_width_60d_pct": 55.29,
+        "volume_vs_sma20": 0.662,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.46,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 41.34,
+        "atr_pct": 4.19,
+        "reasons": [
+          "within 7.8% of ATH",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 16,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 10.88,
+        "range_width_10d_pct": 12.62,
+        "volume_vs_sma20": 0.662,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 41.34,
+        "reasons": [
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-30",
+        "actual_trading_anchor_date": "2026-03-30",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 731.19,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 825.93,
+        "weekly_vwap_proxy": 850.5,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 173
     },
     {
       "ticker": "VIJAYA.NS",
@@ -11568,7 +14410,250 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 139
+      "rank": 174
+    },
+    {
+      "ticker": "VIPIND.NS",
+      "company_name": "VIPIND",
+      "price_date": "2026-09-04",
+      "current_price": 314.05,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 24,
+        "qualified": false,
+        "pattern_proxies": [
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 56.55,
+        "ath_reference": 722.85,
+        "range_width_20d_pct": 11.99,
+        "range_width_60d_pct": 14.46,
+        "volume_vs_sma20": 1.115,
+        "volume_dryup_ratio_10d_vs_prior30d": 1.796,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": false,
+        "rs_excess_63d_pct_points": -3.89,
+        "atr_pct": 3.13,
+        "reasons": [
+          "60D consolidation",
+          "20D tight range"
+        ]
+      },
+      "strategy_b": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.76,
+        "range_width_10d_pct": 6.63,
+        "volume_vs_sma20": 1.115,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": false,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": -3.89,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "above weekly VWAP proxy"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-02-03",
+        "actual_trading_anchor_date": "2026-02-03",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 319.75,
+        "price_above_avwap": false
+      },
+      "vwap": {
+        "daily_vwap_proxy": 313.58,
+        "weekly_vwap_proxy": 308.06,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 175
+    },
+    {
+      "ticker": "VIYASH.NS",
+      "company_name": "VIYASH",
+      "price_date": "2026-09-04",
+      "current_price": 265.85,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 10.79,
+        "ath_reference": 298.0,
+        "range_width_20d_pct": 14.64,
+        "range_width_60d_pct": 22.71,
+        "volume_vs_sma20": 0.335,
+        "volume_dryup_ratio_10d_vs_prior30d": 7.692,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 2.23,
+        "atr_pct": 3.78,
+        "reasons": [
+          "within 10.8% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 56,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy"
+        ],
+        "range_width_5d_pct": 5.72,
+        "range_width_10d_pct": 9.25,
+        "volume_vs_sma20": 0.335,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 2.23,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-23",
+        "actual_trading_anchor_date": "2026-03-23",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 259.0,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 264.97,
+        "weekly_vwap_proxy": 263.15,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 176
+    },
+    {
+      "ticker": "VOLTAMP.NS",
+      "company_name": "VOLTAMP",
+      "price_date": "2026-09-04",
+      "current_price": 11418.0,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 66,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy"
+        ],
+        "distance_from_ath_pct": 22.85,
+        "ath_reference": 14800.0,
+        "range_width_20d_pct": 17.58,
+        "range_width_60d_pct": 28.87,
+        "volume_vs_sma20": 1.27,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.814,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 15.42,
+        "atr_pct": 3.36,
+        "reasons": [
+          "within 22.9% of ATH",
+          "60D consolidation",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 50,
+        "qualified": false,
+        "pattern_proxies": [],
+        "range_width_5d_pct": 8.91,
+        "range_width_10d_pct": 10.32,
+        "volume_vs_sma20": 1.27,
+        "breakout_above_prev5d_high": true,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": 15.42,
+        "reasons": [
+          "close > EMA10 > EMA20",
+          "5D breakout",
+          "above AVWAP",
+          "above weekly VWAP proxy",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-27",
+        "actual_trading_anchor_date": "2026-03-27",
+        "anchor_source": "auto_swing_low",
+        "anchored_vwap": 10107.77,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 11391.33,
+        "weekly_vwap_proxy": 11050.98,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 177
     },
     {
       "ticker": "WELSPUNLIV.NS",
@@ -11649,7 +14734,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 140
+      "rank": 178
     },
     {
       "ticker": "ZFCVINDIA.NS",
@@ -11733,7 +14818,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 141
+      "rank": 179
     },
     {
       "ticker": "AFFLE.NS",
@@ -11812,7 +14897,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 142
+      "rank": 180
     },
     {
       "ticker": "NUVOCO.NS",
@@ -11892,7 +14977,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 143
+      "rank": 181
     },
     {
       "ticker": "COCHINSHIP.NS",
@@ -11975,7 +15060,91 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 144
+      "rank": 182
+    },
+    {
+      "ticker": "IIFLCAPS.NS",
+      "company_name": "IIFLCAPS",
+      "price_date": "2026-09-04",
+      "current_price": 341.2,
+      "selected_strategy": "WATCH",
+      "confidence": "MEDIUM",
+      "strategy_a": {
+        "score": 56,
+        "qualified": false,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 24.0,
+        "ath_reference": 448.95,
+        "range_width_20d_pct": 3.1,
+        "range_width_60d_pct": 5.24,
+        "volume_vs_sma20": 1.386,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.93,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": -3.0,
+        "atr_pct": 1.18,
+        "reasons": [
+          "within 24.0% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "above AVWAP"
+        ]
+      },
+      "strategy_b": {
+        "score": 62,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy",
+          "Ascending Triangle proxy"
+        ],
+        "range_width_5d_pct": 2.73,
+        "range_width_10d_pct": 2.91,
+        "volume_vs_sma20": 1.386,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": true,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": true,
+        "rs_excess_63d_pct_points": -3.0,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "close > EMA10 > EMA20",
+          "above AVWAP",
+          "above weekly VWAP proxy"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-04-01",
+        "actual_trading_anchor_date": "2026-04-01",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 333.48,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 340.18,
+        "weekly_vwap_proxy": 338.73,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": true,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 183
     },
     {
       "ticker": "JSWDULUX.NS",
@@ -12058,7 +15227,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 145
+      "rank": 184
     },
     {
       "ticker": "POLICYBZR.NS",
@@ -12139,7 +15308,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 146
+      "rank": 185
     },
     {
       "ticker": "EMKAY.NS",
@@ -12218,7 +15387,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 147
+      "rank": 186
     },
     {
       "ticker": "MASTERTR.NS",
@@ -12297,7 +15466,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 148
+      "rank": 187
     },
     {
       "ticker": "RADIANTCMS.NS",
@@ -12374,7 +15543,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 149
+      "rank": 188
     },
     {
       "ticker": "RELIANCE.NS",
@@ -12458,7 +15627,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 150
+      "rank": 189
     }
   ],
   "errors": [
@@ -12467,16 +15636,12 @@
       "error": "insufficient history: 186 rows"
     },
     {
-      "ticker": "AMBAAUTO.NS",
-      "error": "AMBAAUTO.NS: empty data"
+      "ticker": "CAPILLARY.NS",
+      "error": "insufficient history: 199 rows"
     },
     {
-      "ticker": "BHADORA.NS",
-      "error": "BHADORA.NS: empty data"
-    },
-    {
-      "ticker": "CLEARSEC.NS",
-      "error": "CLEARSEC.NS: empty data"
+      "ticker": "CORONA.NS",
+      "error": "insufficient history: 182 rows"
     },
     {
       "ticker": "FRONTSP.NS",
@@ -12495,20 +15660,8 @@
       "error": "insufficient history: 179 rows"
     },
     {
-      "ticker": "INDOGULF.NS",
-      "error": "INDOGULF.NS: empty data"
-    },
-    {
-      "ticker": "LEAPFROG.NS",
-      "error": "LEAPFROG.NS: empty data"
-    },
-    {
       "ticker": "LENSKART.NS",
       "error": "insufficient history: 208 rows"
-    },
-    {
-      "ticker": "MAHENDRARE.NS",
-      "error": "MAHENDRARE.NS: empty data"
     },
     {
       "ticker": "MEESHO.NS",
@@ -12517,10 +15670,6 @@
     {
       "ticker": "METAINFO.NS",
       "error": "METAINFO.NS: empty data"
-    },
-    {
-      "ticker": "METHODHUB.NS",
-      "error": "METHODHUB.NS: empty data"
     },
     {
       "ticker": "NANDAN.NS",
@@ -12535,8 +15684,12 @@
       "error": "NRVANDANA.NS: empty data"
     },
     {
-      "ticker": "NURTURE.NS",
-      "error": "NURTURE.NS: empty data"
+      "ticker": "ORKLAINDIA.NS",
+      "error": "insufficient history: 210 rows"
+    },
+    {
+      "ticker": "PARKHOSPS.NS",
+      "error": "insufficient history: 181 rows"
     },
     {
       "ticker": "PEL.NS",
@@ -12571,36 +15724,28 @@
       "error": "SDRETAIL.NS: empty data"
     },
     {
-      "ticker": "SHEELBIO.NS",
-      "error": "SHEELBIO.NS: empty data"
-    },
-    {
       "ticker": "SHILCTECH.NS",
       "error": "insufficient history: 198 rows"
-    },
-    {
-      "ticker": "SHRERAMA.NS",
-      "error": "SHRERAMA.NS: empty data"
     },
     {
       "ticker": "SHRIRAMMULTI.NS",
       "error": "SHRIRAMMULTI.NS: empty data"
     },
     {
-      "ticker": "SIMPLEXCAS.NS",
-      "error": "SIMPLEXCAS.NS: empty data"
+      "ticker": "SKFINDUS.NS",
+      "error": "insufficient history: 186 rows"
     },
     {
       "ticker": "SMRJEWEL.NS",
       "error": "SMRJEWEL.NS: empty data"
     },
     {
-      "ticker": "SRTEX.NS",
-      "error": "SRTEX.NS: empty data"
-    },
-    {
       "ticker": "SRTRANSFIN.NS",
       "error": "SRTRANSFIN.NS: empty data"
+    },
+    {
+      "ticker": "SUDEEPPHRM.NS",
+      "error": "insufficient history: 194 rows"
     },
     {
       "ticker": "SURATWWALA.NS",
@@ -12619,8 +15764,16 @@
       "error": "insufficient history: 201 rows"
     },
     {
+      "ticker": "TIMETECH.NS",
+      "error": "TIMETECH.NS: empty data"
+    },
+    {
       "ticker": "TMCV.NS",
       "error": "insufficient history: 206 rows"
+    },
+    {
+      "ticker": "UTLSOLAR.NS",
+      "error": "insufficient history: 200 rows"
     },
     {
       "ticker": "VAML.NS",
@@ -12637,6 +15790,10 @@
     {
       "ticker": "VOGL.NS",
       "error": "insufficient history: 60 rows"
+    },
+    {
+      "ticker": "WAKEFIT.NS",
+      "error": "insufficient history: 182 rows"
     },
     {
       "ticker": "WEBSOL.NS",
