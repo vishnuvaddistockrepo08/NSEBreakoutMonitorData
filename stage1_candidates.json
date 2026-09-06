@@ -1,8 +1,8 @@
 {
-  "generated_at_ist": "2026-09-06T23:12:02.749598+05:30",
-  "universe_requested": 813,
+  "generated_at_ist": "2026-09-06T23:32:51.772901+05:30",
+  "universe_requested": 793,
   "successfully_scanned": 792,
-  "failed": 21,
+  "failed": 1,
   "score_threshold_rule": "> 80",
   "candidate_count": 46,
   "candidates": [
