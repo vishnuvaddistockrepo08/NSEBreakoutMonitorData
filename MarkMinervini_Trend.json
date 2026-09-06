@@ -1,7 +1,7 @@
 {
   "schema_version": "minervini_trend_v1",
   "scanner": "MarkMinervini Trend",
-  "generated_at_ist": "2026-09-06T16:26:51.663311+05:30",
+  "generated_at_ist": "2026-09-06T23:16:24.908516+05:30",
   "data_timestamp": "2026-09-04",
   "input_file": "stocks.json",
   "benchmark": {
@@ -28,16 +28,16 @@
     "category_B": "at least 3-quarter Sales acceleration when Category A is absent"
   },
   "coverage": {
-    "universe_from_stocks_json": 609,
-    "price_history_loaded": 578,
-    "price_or_technical_unavailable": 46,
-    "technical_failed": 503,
-    "technical_passed": 60,
+    "universe_from_stocks_json": 815,
+    "price_history_loaded": 795,
+    "price_or_technical_unavailable": 43,
+    "technical_failed": 684,
+    "technical_passed": 88,
     "fundamental_unavailable_or_insufficient": 0,
-    "fundamental_available_but_not_accelerating": 50,
+    "fundamental_available_but_not_accelerating": 76,
     "category_A_count": 2,
-    "category_B_count": 8,
-    "qualified_count": 10
+    "category_B_count": 10,
+    "qualified_count": 12
   },
   "candidates": [
     {
@@ -601,6 +601,146 @@
       "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.1%; 1.92 ATR from 52W high; RS 52W high 4 trading day(s) ago; >=3-quarter sales acceleration"
     },
     {
+      "ticker": "SANSERA",
+      "yahoo_symbol": "SANSERA.NS",
+      "company_name": "SANSERA",
+      "index_memberships": [],
+      "price_date": "2026-09-04",
+      "current_price": 3782.6,
+      "dma50": 3524.44,
+      "dma150": 2803.64,
+      "dma200": 2535.33,
+      "atr14": 138.79,
+      "atr_pct": 3.67,
+      "atr_priority": "PREFERRED_3_TO_10",
+      "high_52w": 4084.9,
+      "pct_below_52w_high": 7.4,
+      "distance_from_52w_high_atrs": 2.18,
+      "rs_new_52w_high_within_10d": true,
+      "rs_new_high_recency_trading_days": 4,
+      "rs_new_high_date": "2026-08-31",
+      "technical_checks": {
+        "dma50_gt_dma150_gt_dma200": true,
+        "price_gt_dma200": true,
+        "atr_pct_le_10": true,
+        "within_4_atrs_of_52w_high": true,
+        "rs_new_52w_high_within_10_trading_days": true
+      },
+      "technical_pass": true,
+      "fundamental_status": "OK",
+      "fundamental_growth_method": "sequential_quarter_over_quarter",
+      "accelerating_eps_quarters": 0,
+      "accelerating_sales_quarters": 4,
+      "eps_growth": [
+        {
+          "quarter": "2025-06-30",
+          "growth_pct": 4.93
+        },
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 15.18
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -4.34
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 76.34
+        }
+      ],
+      "sales_growth": [
+        {
+          "quarter": "2025-06-30",
+          "growth_pct": -1.96
+        },
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 7.69
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": 9.99
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 10.03
+        }
+      ],
+      "category": "B",
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.67%; 2.18 ATR from 52W high; RS 52W high 4 trading day(s) ago; >=3-quarter sales acceleration"
+    },
+    {
+      "ticker": "PGIL",
+      "yahoo_symbol": "PGIL.NS",
+      "company_name": "PGIL",
+      "index_memberships": [],
+      "price_date": "2026-09-04",
+      "current_price": 2278.3,
+      "dma50": 2181.57,
+      "dma150": 1795.04,
+      "dma200": 1743.05,
+      "atr14": 88.9,
+      "atr_pct": 3.9,
+      "atr_priority": "PREFERRED_3_TO_10",
+      "high_52w": 2539.6,
+      "pct_below_52w_high": 10.29,
+      "distance_from_52w_high_atrs": 2.94,
+      "rs_new_52w_high_within_10d": true,
+      "rs_new_high_recency_trading_days": 4,
+      "rs_new_high_date": "2026-08-31",
+      "technical_checks": {
+        "dma50_gt_dma150_gt_dma200": true,
+        "price_gt_dma200": true,
+        "atr_pct_le_10": true,
+        "within_4_atrs_of_52w_high": true,
+        "rs_new_52w_high_within_10_trading_days": true
+      },
+      "technical_pass": true,
+      "fundamental_status": "OK",
+      "fundamental_growth_method": "sequential_quarter_over_quarter",
+      "accelerating_eps_quarters": 0,
+      "accelerating_sales_quarters": 3,
+      "eps_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 8.34
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -27.21
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 56.11
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 20.61
+        }
+      ],
+      "sales_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 6.92
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -10.87
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 12.25
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 16.34
+        }
+      ],
+      "category": "B",
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.9%; 2.94 ATR from 52W high; RS 52W high 4 trading day(s) ago; >=3-quarter sales acceleration"
+    },
+    {
       "ticker": "NAZARA",
       "yahoo_symbol": "NAZARA.NS",
       "company_name": "NAZARA",
@@ -749,19 +889,14 @@
       "reason": "insufficient price history (186 rows; need >=210)"
     },
     {
-      "ticker": "AMBAAUTO",
-      "yahoo_symbol": "AMBAAUTO.NS",
-      "reason": "empty/invalid OHLCV"
+      "ticker": "CAPILLARY",
+      "yahoo_symbol": "CAPILLARY.NS",
+      "reason": "insufficient price history (199 rows; need >=210)"
     },
     {
-      "ticker": "BHADORA",
-      "yahoo_symbol": "BHADORA.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "CLEARSEC",
-      "yahoo_symbol": "CLEARSEC.NS",
-      "reason": "empty/invalid OHLCV"
+      "ticker": "CORONA",
+      "yahoo_symbol": "CORONA.NS",
+      "reason": "insufficient price history (182 rows; need >=210)"
     },
     {
       "ticker": "FRONTSP",
@@ -784,24 +919,9 @@
       "reason": "insufficient price history (179 rows; need >=210)"
     },
     {
-      "ticker": "INDOGULF",
-      "yahoo_symbol": "INDOGULF.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "LEAPFROG",
-      "yahoo_symbol": "LEAPFROG.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "LENSKART",
       "yahoo_symbol": "LENSKART.NS",
       "reason": "insufficient price history (208 rows; need >=210)"
-    },
-    {
-      "ticker": "MAHENDRARE",
-      "yahoo_symbol": "MAHENDRARE.NS",
-      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "MEESHO",
@@ -811,11 +931,6 @@
     {
       "ticker": "METAINFO",
       "yahoo_symbol": "METAINFO.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "METHODHUB",
-      "yahoo_symbol": "METHODHUB.NS",
       "reason": "empty/invalid OHLCV"
     },
     {
@@ -834,9 +949,14 @@
       "reason": "empty/invalid OHLCV"
     },
     {
-      "ticker": "NURTURE",
-      "yahoo_symbol": "NURTURE.NS",
-      "reason": "empty/invalid OHLCV"
+      "ticker": "ORKLAINDIA",
+      "yahoo_symbol": "ORKLAINDIA.NS",
+      "reason": "insufficient stock/benchmark overlap (206 rows)"
+    },
+    {
+      "ticker": "PARKHOSPS",
+      "yahoo_symbol": "PARKHOSPS.NS",
+      "reason": "insufficient price history (181 rows; need >=210)"
     },
     {
       "ticker": "PEL",
@@ -879,19 +999,9 @@
       "reason": "empty/invalid OHLCV"
     },
     {
-      "ticker": "SHEELBIO",
-      "yahoo_symbol": "SHEELBIO.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "SHILCTECH",
       "yahoo_symbol": "SHILCTECH.NS",
       "reason": "insufficient price history (198 rows; need >=210)"
-    },
-    {
-      "ticker": "SHRERAMA",
-      "yahoo_symbol": "SHRERAMA.NS",
-      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "SHRIRAMMULTI",
@@ -899,9 +1009,9 @@
       "reason": "empty/invalid OHLCV"
     },
     {
-      "ticker": "SIMPLEXCAS",
-      "yahoo_symbol": "SIMPLEXCAS.NS",
-      "reason": "empty/invalid OHLCV"
+      "ticker": "SKFINDUS",
+      "yahoo_symbol": "SKFINDUS.NS",
+      "reason": "insufficient price history (186 rows; need >=210)"
     },
     {
       "ticker": "SMRJEWEL",
@@ -909,14 +1019,14 @@
       "reason": "empty/invalid OHLCV"
     },
     {
-      "ticker": "SRTEX",
-      "yahoo_symbol": "SRTEX.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "SRTRANSFIN",
       "yahoo_symbol": "SRTRANSFIN.NS",
       "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "SUDEEPPHRM",
+      "yahoo_symbol": "SUDEEPPHRM.NS",
+      "reason": "insufficient price history (194 rows; need >=210)"
     },
     {
       "ticker": "SURATWWALA",
@@ -939,9 +1049,19 @@
       "reason": "insufficient price history (201 rows; need >=210)"
     },
     {
+      "ticker": "TIMETECH",
+      "yahoo_symbol": "TIMETECH.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
       "ticker": "TMCV",
       "yahoo_symbol": "TMCV.NS",
       "reason": "insufficient price history (206 rows; need >=210)"
+    },
+    {
+      "ticker": "UTLSOLAR",
+      "yahoo_symbol": "UTLSOLAR.NS",
+      "reason": "insufficient price history (200 rows; need >=210)"
     },
     {
       "ticker": "VAML",
@@ -962,6 +1082,11 @@
       "ticker": "VOGL",
       "yahoo_symbol": "VOGL.NS",
       "reason": "insufficient price history (60 rows; need >=210)"
+    },
+    {
+      "ticker": "WAKEFIT",
+      "yahoo_symbol": "WAKEFIT.NS",
+      "reason": "insufficient price history (182 rows; need >=210)"
     },
     {
       "ticker": "WEBSOL",
