@@ -1,7 +1,7 @@
 {
   "schema_version": "minervini_trend_v1",
   "scanner": "MarkMinervini Trend",
-  "generated_at_ist": "2026-09-06T23:16:24.908516+05:30",
+  "generated_at_ist": "2026-09-06T23:35:53.533777+05:30",
   "data_timestamp": "2026-09-04",
   "input_file": "stocks.json",
   "benchmark": {
@@ -28,9 +28,9 @@
     "category_B": "at least 3-quarter Sales acceleration when Category A is absent"
   },
   "coverage": {
-    "universe_from_stocks_json": 815,
+    "universe_from_stocks_json": 795,
     "price_history_loaded": 795,
-    "price_or_technical_unavailable": 43,
+    "price_or_technical_unavailable": 23,
     "technical_failed": 684,
     "technical_passed": 88,
     "fundamental_unavailable_or_insufficient": 0,
@@ -909,11 +909,6 @@
       "reason": "insufficient price history (103 rows; need >=210)"
     },
     {
-      "ticker": "GUJGASLTD",
-      "yahoo_symbol": "GUJGASLTD.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "ICICIAMC",
       "yahoo_symbol": "ICICIAMC.NS",
       "reason": "insufficient price history (179 rows; need >=210)"
@@ -929,26 +924,6 @@
       "reason": "insufficient price history (186 rows; need >=210)"
     },
     {
-      "ticker": "METAINFO",
-      "yahoo_symbol": "METAINFO.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "NANDAN",
-      "yahoo_symbol": "NANDAN.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "NEOCHEM",
-      "yahoo_symbol": "NEOCHEM.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "NRVANDANA",
-      "yahoo_symbol": "NRVANDANA.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "ORKLAINDIA",
       "yahoo_symbol": "ORKLAINDIA.NS",
       "reason": "insufficient stock/benchmark overlap (206 rows)"
@@ -959,29 +934,9 @@
       "reason": "insufficient price history (181 rows; need >=210)"
     },
     {
-      "ticker": "PEL",
-      "yahoo_symbol": "PEL.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "PINELABS",
       "yahoo_symbol": "PINELABS.NS",
       "reason": "insufficient price history (204 rows; need >=210)"
-    },
-    {
-      "ticker": "PRITIKAENG",
-      "yahoo_symbol": "PRITIKAENG.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "RAJPUTANA",
-      "yahoo_symbol": "RAJPUTANA.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "RBL",
-      "yahoo_symbol": "RBL.NS",
-      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "RUDRA",
@@ -989,24 +944,9 @@
       "reason": "insufficient price history (178 rows; need >=210)"
     },
     {
-      "ticker": "SAISILKS",
-      "yahoo_symbol": "SAISILKS.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "SDRETAIL",
-      "yahoo_symbol": "SDRETAIL.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "SHILCTECH",
       "yahoo_symbol": "SHILCTECH.NS",
       "reason": "insufficient price history (198 rows; need >=210)"
-    },
-    {
-      "ticker": "SHRIRAMMULTI",
-      "yahoo_symbol": "SHRIRAMMULTI.NS",
-      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "SKFINDUS",
@@ -1014,44 +954,14 @@
       "reason": "insufficient price history (186 rows; need >=210)"
     },
     {
-      "ticker": "SMRJEWEL",
-      "yahoo_symbol": "SMRJEWEL.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "SRTRANSFIN",
-      "yahoo_symbol": "SRTRANSFIN.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "SUDEEPPHRM",
       "yahoo_symbol": "SUDEEPPHRM.NS",
       "reason": "insufficient price history (194 rows; need >=210)"
     },
     {
-      "ticker": "SURATWWALA",
-      "yahoo_symbol": "SURATWWALA.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "TATAMOTORS",
-      "yahoo_symbol": "TATAMOTORS.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "TATAMTRDVR",
-      "yahoo_symbol": "TATAMTRDVR.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
       "ticker": "TENNIND",
       "yahoo_symbol": "TENNIND.NS",
       "reason": "insufficient price history (201 rows; need >=210)"
-    },
-    {
-      "ticker": "TIMETECH",
-      "yahoo_symbol": "TIMETECH.NS",
-      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "TMCV",
@@ -1087,16 +997,6 @@
       "ticker": "WAKEFIT",
       "yahoo_symbol": "WAKEFIT.NS",
       "reason": "insufficient price history (182 rows; need >=210)"
-    },
-    {
-      "ticker": "WEBSOL",
-      "yahoo_symbol": "WEBSOL.NS",
-      "reason": "empty/invalid OHLCV"
-    },
-    {
-      "ticker": "ZEALAQUA",
-      "yahoo_symbol": "ZEALAQUA.NS",
-      "reason": "empty/invalid OHLCV"
     }
   ]
 }
