@@ -1,7 +1,7 @@
 {
   "schema_version": "swingtrade_v1",
   "scanner": "SwingTrade Scanner - Momentum + AVWAP",
-  "generated_at_ist": "2026-09-06T23:22:20.425989+05:30",
+  "generated_at_ist": "2026-09-06T23:38:39.097460+05:30",
   "data_timestamp": "2026-09-04",
   "input_file": "C:\\VishnuVaddi\\StockMarket\\NSEBreakout_TomorrowBullish_Combined\\NSEBreakout_TomorrowBullish_Combined\\NSEBreakoutMonitor\\stocks.json",
   "benchmark": {
@@ -19,9 +19,9 @@
     "vwap_note": "True daily VWAP requires intraday bars; daily typical price and running weekly VWAP are stored as proxies."
   },
   "coverage": {
-    "universe_requested": 815,
+    "universe_requested": 795,
     "successfully_scanned": 772,
-    "failed": 43,
+    "failed": 23,
     "qualified_count": 86,
     "watch_count": 103,
     "strategy_a_count": 64,
@@ -15652,10 +15652,6 @@
       "error": "insufficient history: 166 rows"
     },
     {
-      "ticker": "GUJGASLTD.NS",
-      "error": "GUJGASLTD.NS: empty data"
-    },
-    {
       "ticker": "ICICIAMC.NS",
       "error": "insufficient history: 179 rows"
     },
@@ -15668,22 +15664,6 @@
       "error": "insufficient history: 186 rows"
     },
     {
-      "ticker": "METAINFO.NS",
-      "error": "METAINFO.NS: empty data"
-    },
-    {
-      "ticker": "NANDAN.NS",
-      "error": "NANDAN.NS: empty data"
-    },
-    {
-      "ticker": "NEOCHEM.NS",
-      "error": "NEOCHEM.NS: empty data"
-    },
-    {
-      "ticker": "NRVANDANA.NS",
-      "error": "NRVANDANA.NS: empty data"
-    },
-    {
       "ticker": "ORKLAINDIA.NS",
       "error": "insufficient history: 210 rows"
     },
@@ -15692,80 +15672,28 @@
       "error": "insufficient history: 181 rows"
     },
     {
-      "ticker": "PEL.NS",
-      "error": "PEL.NS: empty data"
-    },
-    {
       "ticker": "PINELABS.NS",
       "error": "insufficient history: 204 rows"
-    },
-    {
-      "ticker": "PRITIKAENG.NS",
-      "error": "PRITIKAENG.NS: empty data"
-    },
-    {
-      "ticker": "RAJPUTANA.NS",
-      "error": "RAJPUTANA.NS: empty data"
-    },
-    {
-      "ticker": "RBL.NS",
-      "error": "RBL.NS: empty data"
     },
     {
       "ticker": "RUDRA.NS",
       "error": "insufficient history: 178 rows"
     },
     {
-      "ticker": "SAISILKS.NS",
-      "error": "SAISILKS.NS: empty data"
-    },
-    {
-      "ticker": "SDRETAIL.NS",
-      "error": "SDRETAIL.NS: empty data"
-    },
-    {
       "ticker": "SHILCTECH.NS",
       "error": "insufficient history: 198 rows"
-    },
-    {
-      "ticker": "SHRIRAMMULTI.NS",
-      "error": "SHRIRAMMULTI.NS: empty data"
     },
     {
       "ticker": "SKFINDUS.NS",
       "error": "insufficient history: 186 rows"
     },
     {
-      "ticker": "SMRJEWEL.NS",
-      "error": "SMRJEWEL.NS: empty data"
-    },
-    {
-      "ticker": "SRTRANSFIN.NS",
-      "error": "SRTRANSFIN.NS: empty data"
-    },
-    {
       "ticker": "SUDEEPPHRM.NS",
       "error": "insufficient history: 194 rows"
     },
     {
-      "ticker": "SURATWWALA.NS",
-      "error": "SURATWWALA.NS: empty data"
-    },
-    {
-      "ticker": "TATAMOTORS.NS",
-      "error": "TATAMOTORS.NS: empty data"
-    },
-    {
-      "ticker": "TATAMTRDVR.NS",
-      "error": "TATAMTRDVR.NS: empty data"
-    },
-    {
       "ticker": "TENNIND.NS",
       "error": "insufficient history: 201 rows"
-    },
-    {
-      "ticker": "TIMETECH.NS",
-      "error": "TIMETECH.NS: empty data"
     },
     {
       "ticker": "TMCV.NS",
@@ -15794,14 +15722,6 @@
     {
       "ticker": "WAKEFIT.NS",
       "error": "insufficient history: 182 rows"
-    },
-    {
-      "ticker": "WEBSOL.NS",
-      "error": "WEBSOL.NS: empty data"
-    },
-    {
-      "ticker": "ZEALAQUA.NS",
-      "error": "ZEALAQUA.NS: empty data"
     }
   ]
 }
