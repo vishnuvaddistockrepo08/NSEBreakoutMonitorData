@@ -1,8 +1,8 @@
 {
   "schema_version": "swingtrade_v1",
   "scanner": "SwingTrade Scanner - Momentum + AVWAP",
-  "generated_at_ist": "2026-09-13T22:06:58.720980+05:30",
-  "data_timestamp": "2026-09-11",
+  "generated_at_ist": "2026-09-16T03:20:16.915248+05:30",
+  "data_timestamp": "2026-09-14",
   "input_file": "C:\\VishnuVaddi\\StockMarket\\NSEBreakout_TomorrowBullish_Combined\\NSEBreakout_TomorrowBullish_Combined\\NSEBreakoutMonitor\\stocks.json",
   "benchmark": {
     "symbol": "^NSEI",
@@ -22,9 +22,9 @@
     "universe_requested": 795,
     "successfully_scanned": 772,
     "failed": 23,
-    "qualified_count": 77,
-    "watch_count": 97,
-    "strategy_a_count": 65,
+    "qualified_count": 78,
+    "watch_count": 96,
+    "strategy_a_count": 66,
     "strategy_b_count": 21,
     "dual_strategy_count": 9
   },
@@ -1252,8 +1252,8 @@
           "VCP proxy",
           "Flat/Tight Base proxy"
         ],
-        "distance_from_ath_pct": 16.64,
-        "ath_reference": 675.0,
+        "distance_from_ath_pct": 14.31,
+        "ath_reference": 656.7,
         "range_width_20d_pct": 7.21,
         "range_width_60d_pct": 13.41,
         "volume_vs_sma20": 1.599,
@@ -1263,7 +1263,7 @@
         "rs_excess_63d_pct_points": 9.25,
         "atr_pct": 2.66,
         "reasons": [
-          "within 16.6% of ATH",
+          "within 14.3% of ATH",
           "60D consolidation",
           "20D tight range",
           "volume dry-up",
@@ -2487,6 +2487,91 @@
       "rank": 29
     },
     {
+      "ticker": "GOLDBEES.NS",
+      "company_name": "GOLDBEES",
+      "price_date": "2026-09-14",
+      "current_price": 125.12,
+      "selected_strategy": "A",
+      "confidence": "HIGH",
+      "strategy_a": {
+        "score": 78,
+        "qualified": true,
+        "pattern_proxies": [
+          "VCP proxy",
+          "Flat/Tight Base proxy"
+        ],
+        "distance_from_ath_pct": 15.54,
+        "ath_reference": 148.14,
+        "range_width_20d_pct": 8.85,
+        "range_width_60d_pct": 16.95,
+        "volume_vs_sma20": 0.0,
+        "volume_dryup_ratio_10d_vs_prior30d": 0.846,
+        "breakout_above_prev20d_high": false,
+        "above_avwap": true,
+        "rs_excess_63d_pct_points": 2.72,
+        "atr_pct": 1.53,
+        "reasons": [
+          "within 15.5% of ATH",
+          "60D consolidation",
+          "20D tight range",
+          "volume dry-up",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "strategy_b": {
+        "score": 48,
+        "qualified": false,
+        "pattern_proxies": [
+          "4-5 Day Tight Range",
+          "Flat Base proxy",
+          "Ascending Triangle proxy"
+        ],
+        "range_width_5d_pct": 2.44,
+        "range_width_10d_pct": 4.11,
+        "volume_vs_sma20": 0.0,
+        "breakout_above_prev5d_high": false,
+        "breakout_above_prev20d_high": false,
+        "trend_close_gt_ema10_gt_ema20": false,
+        "above_avwap": true,
+        "above_weekly_vwap_proxy": false,
+        "rs_excess_63d_pct_points": 2.72,
+        "reasons": [
+          "4-5 day tight range",
+          "10D flat-base behavior",
+          "above AVWAP",
+          "RS outperforming"
+        ]
+      },
+      "anchor": {
+        "requested_anchor_date": "2026-03-02",
+        "actual_trading_anchor_date": "2026-03-02",
+        "anchor_source": "auto_major_gap",
+        "anchored_vwap": 124.13,
+        "price_above_avwap": true
+      },
+      "vwap": {
+        "daily_vwap_proxy": 125.12,
+        "weekly_vwap_proxy": null,
+        "price_above_daily_vwap_proxy": true,
+        "price_above_weekly_vwap_proxy": false,
+        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
+      },
+      "user_levels": {
+        "entry": null,
+        "target": null,
+        "stoploss": null,
+        "risk_reward_ratio": null,
+        "timeframe_to_hold": null,
+        "trigger": null,
+        "price_structure": null,
+        "price_action": null,
+        "volume_analysis": null,
+        "relative_strength_vs_nifty": null
+      },
+      "rank": 30
+    },
+    {
       "ticker": "GRWRHITECH.NS",
       "company_name": "GRWRHITECH",
       "price_date": "2026-09-11",
@@ -2567,7 +2652,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 30
+      "rank": 31
     },
     {
       "ticker": "HONASA.NS",
@@ -2652,7 +2737,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 31
+      "rank": 32
     },
     {
       "ticker": "HYUNDAI.NS",
@@ -2736,7 +2821,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 32
+      "rank": 33
     },
     {
       "ticker": "IPCALAB.NS",
@@ -2822,7 +2907,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 33
+      "rank": 34
     },
     {
       "ticker": "KARURVYSYA.NS",
@@ -2904,7 +2989,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 34
+      "rank": 35
     },
     {
       "ticker": "LALPATHLAB.NS",
@@ -2988,7 +3073,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 35
+      "rank": 36
     },
     {
       "ticker": "LTF.NS",
@@ -3072,7 +3157,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 36
+      "rank": 37
     },
     {
       "ticker": "MINDACORP.NS",
@@ -3157,7 +3242,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 37
+      "rank": 38
     },
     {
       "ticker": "NAVINFLUOR.NS",
@@ -3242,7 +3327,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 38
+      "rank": 39
     },
     {
       "ticker": "PETRONET.NS",
@@ -3327,7 +3412,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 39
+      "rank": 40
     },
     {
       "ticker": "PIDILITIND.NS",
@@ -3410,7 +3495,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 40
+      "rank": 41
     },
     {
       "ticker": "POLICYBZR.NS",
@@ -3492,7 +3577,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 41
+      "rank": 42
     },
     {
       "ticker": "RADICO.NS",
@@ -3576,7 +3661,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 42
+      "rank": 43
     },
     {
       "ticker": "SAGILITY.NS",
@@ -3658,7 +3743,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 43
+      "rank": 44
     },
     {
       "ticker": "SAREGAMA.NS",
@@ -3742,7 +3827,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 44
+      "rank": 45
     },
     {
       "ticker": "SHYAMMETL.NS",
@@ -3826,7 +3911,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 45
+      "rank": 46
     },
     {
       "ticker": "SIEMENS.NS",
@@ -3911,7 +3996,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 46
+      "rank": 47
     },
     {
       "ticker": "SUNPHARMA.NS",
@@ -3994,7 +4079,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 47
+      "rank": 48
     },
     {
       "ticker": "TATACAP.NS",
@@ -4078,7 +4163,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 48
+      "rank": 49
     },
     {
       "ticker": "TECHM.NS",
@@ -4157,7 +4242,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 49
+      "rank": 50
     },
     {
       "ticker": "TITAN.NS",
@@ -4242,7 +4327,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 50
+      "rank": 51
     },
     {
       "ticker": "UNIONBANK.NS",
@@ -4324,7 +4409,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 51
+      "rank": 52
     },
     {
       "ticker": "UNITDSPR.NS",
@@ -4405,7 +4490,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 52
+      "rank": 53
     },
     {
       "ticker": "VMART.NS",
@@ -4489,7 +4574,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 53
+      "rank": 54
     },
     {
       "ticker": "AETHER.NS",
@@ -4574,7 +4659,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 54
+      "rank": 55
     },
     {
       "ticker": "BLUESTONE.NS",
@@ -4657,7 +4742,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 55
+      "rank": 56
     },
     {
       "ticker": "HOMEFIRST.NS",
@@ -4734,7 +4819,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 56
+      "rank": 57
     },
     {
       "ticker": "INDIGO.NS",
@@ -4819,7 +4904,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 57
+      "rank": 58
     },
     {
       "ticker": "JAMNAAUTO.NS",
@@ -4902,7 +4987,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 58
+      "rank": 59
     },
     {
       "ticker": "PAYTM.NS",
@@ -4985,7 +5070,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 59
+      "rank": 60
     },
     {
       "ticker": "PHOENIXLTD.NS",
@@ -5069,7 +5154,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 60
+      "rank": 61
     },
     {
       "ticker": "POONAWALLA.NS",
@@ -5151,7 +5236,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 61
+      "rank": 62
     },
     {
       "ticker": "PRICOLLTD.NS",
@@ -5232,7 +5317,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 62
+      "rank": 63
     },
     {
       "ticker": "PRIVISCL.NS",
@@ -5316,7 +5401,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 63
+      "rank": 64
     },
     {
       "ticker": "SHAILY.NS",
@@ -5396,7 +5481,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 64
+      "rank": 65
     },
     {
       "ticker": "WABAG.NS",
@@ -5477,7 +5562,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 65
+      "rank": 66
     },
     {
       "ticker": "CONCORDBIO.NS",
@@ -5560,7 +5645,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 66
+      "rank": 67
     },
     {
       "ticker": "FIVESTAR.NS",
@@ -5642,7 +5727,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 67
+      "rank": 68
     },
     {
       "ticker": "SAFARI.NS",
@@ -5726,7 +5811,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 68
+      "rank": 69
     },
     {
       "ticker": "ANANDRATHI.NS",
@@ -5811,7 +5896,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 69
+      "rank": 70
     },
     {
       "ticker": "ASAHIINDIA.NS",
@@ -5897,7 +5982,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 70
+      "rank": 71
     },
     {
       "ticker": "AUROPHARMA.NS",
@@ -5983,7 +6068,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 71
+      "rank": 72
     },
     {
       "ticker": "BOSCHLTD.NS",
@@ -6068,7 +6153,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 72
+      "rank": 73
     },
     {
       "ticker": "CLEAN.NS",
@@ -6152,7 +6237,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 73
+      "rank": 74
     },
     {
       "ticker": "EMCURE.NS",
@@ -6237,7 +6322,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 74
+      "rank": 75
     },
     {
       "ticker": "JSWINFRA.NS",
@@ -6322,7 +6407,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 75
+      "rank": 76
     },
     {
       "ticker": "LAURUSLABS.NS",
@@ -6407,7 +6492,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 76
+      "rank": 77
     },
     {
       "ticker": "SUNDARMFIN.NS",
@@ -6492,7 +6577,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 77
+      "rank": 78
     },
     {
       "ticker": "BELRISE.NS",
@@ -6574,7 +6659,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 78
+      "rank": 79
     },
     {
       "ticker": "CCAVENUE.NS",
@@ -6661,7 +6746,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 79
+      "rank": 80
     },
     {
       "ticker": "CGPOWER.NS",
@@ -6744,7 +6829,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 80
+      "rank": 81
     },
     {
       "ticker": "ELLEN.NS",
@@ -6825,7 +6910,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 81
+      "rank": 82
     },
     {
       "ticker": "HERITGFOOD.NS",
@@ -6906,7 +6991,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 82
+      "rank": 83
     },
     {
       "ticker": "IFBIND.NS",
@@ -6989,7 +7074,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 83
+      "rank": 84
     },
     {
       "ticker": "JINDALSTEL.NS",
@@ -7063,7 +7148,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 84
+      "rank": 85
     },
     {
       "ticker": "KIMS.NS",
@@ -7145,7 +7230,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 85
+      "rank": 86
     },
     {
       "ticker": "LUPIN.NS",
@@ -7227,7 +7312,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 86
+      "rank": 87
     },
     {
       "ticker": "MAHSEAMLES.NS",
@@ -7308,7 +7393,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 87
+      "rank": 88
     },
     {
       "ticker": "PREMIERENE.NS",
@@ -7389,7 +7474,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 88
+      "rank": 89
     },
     {
       "ticker": "SETL.NS",
@@ -7471,7 +7556,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 89
+      "rank": 90
     },
     {
       "ticker": "ACUTAAS.NS",
@@ -7550,7 +7635,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 90
+      "rank": 91
     },
     {
       "ticker": "ADANIENT.NS",
@@ -7627,7 +7712,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 91
+      "rank": 92
     },
     {
       "ticker": "APARINDS.NS",
@@ -7710,7 +7795,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 92
+      "rank": 93
     },
     {
       "ticker": "APOLLO.NS",
@@ -7789,7 +7874,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 93
+      "rank": 94
     },
     {
       "ticker": "APOLLOTYRE.NS",
@@ -7866,7 +7951,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 94
+      "rank": 95
     },
     {
       "ticker": "ASKAUTOLTD.NS",
@@ -7948,7 +8033,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 95
+      "rank": 96
     },
     {
       "ticker": "ASTRAMICRO.NS",
@@ -8028,7 +8113,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 96
+      "rank": 97
     },
     {
       "ticker": "AVL.NS",
@@ -8111,7 +8196,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 97
+      "rank": 98
     },
     {
       "ticker": "AZAD.NS",
@@ -8194,7 +8279,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 98
+      "rank": 99
     },
     {
       "ticker": "BAJAJ-AUTO.NS",
@@ -8277,7 +8362,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 99
+      "rank": 100
     },
     {
       "ticker": "BAJAJHLDNG.NS",
@@ -8361,7 +8446,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 100
+      "rank": 101
     },
     {
       "ticker": "BEL.NS",
@@ -8444,7 +8529,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 101
+      "rank": 102
     },
     {
       "ticker": "CARTRADE.NS",
@@ -8522,7 +8607,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 102
+      "rank": 103
     },
     {
       "ticker": "CHOLAFIN.NS",
@@ -8606,7 +8691,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 103
+      "rank": 104
     },
     {
       "ticker": "CIPLA.NS",
@@ -8687,7 +8772,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 104
+      "rank": 105
     },
     {
       "ticker": "CREDITACC.NS",
@@ -8766,7 +8851,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 105
+      "rank": 106
     },
     {
       "ticker": "CUB.NS",
@@ -8841,7 +8926,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 106
+      "rank": 107
     },
     {
       "ticker": "DIXON.NS",
@@ -8918,7 +9003,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 107
+      "rank": 108
     },
     {
       "ticker": "DRREDDY.NS",
@@ -9001,7 +9086,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 108
+      "rank": 109
     },
     {
       "ticker": "EICHERMOT.NS",
@@ -9084,7 +9169,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 109
+      "rank": 110
     },
     {
       "ticker": "FEDERALBNK.NS",
@@ -9168,7 +9253,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 110
+      "rank": 111
     },
     {
       "ticker": "FLUOROCHEM.NS",
@@ -9251,7 +9336,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 111
+      "rank": 112
     },
     {
       "ticker": "GABRIEL.NS",
@@ -9328,7 +9413,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 112
+      "rank": 113
     },
     {
       "ticker": "GAEL.NS",
@@ -9405,7 +9490,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 113
+      "rank": 114
     },
     {
       "ticker": "GESHIP.NS",
@@ -9487,7 +9572,7 @@
         "volume_analysis": null,
         "relative_strength_vs_nifty": null
       },
-      "rank": 114
+      "rank": 115
     },
     {
       "ticker": "GLENMARK.NS",
@@ -9551,89 +9636,6 @@
       "vwap": {
         "daily_vwap_proxy": 2411.73,
         "weekly_vwap_proxy": 2440.48,
-        "price_above_daily_vwap_proxy": true,
-        "price_above_weekly_vwap_proxy": false,
-        "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
-      },
-      "user_levels": {
-        "entry": null,
-        "target": null,
-        "stoploss": null,
-        "risk_reward_ratio": null,
-        "timeframe_to_hold": null,
-        "trigger": null,
-        "price_structure": null,
-        "price_action": null,
-        "volume_analysis": null,
-        "relative_strength_vs_nifty": null
-      },
-      "rank": 115
-    },
-    {
-      "ticker": "GOLDBEES.NS",
-      "company_name": "GOLDBEES",
-      "price_date": "2026-09-11",
-      "current_price": 125.12,
-      "selected_strategy": "WATCH",
-      "confidence": "MEDIUM",
-      "strategy_a": {
-        "score": 66,
-        "qualified": false,
-        "pattern_proxies": [
-          "VCP proxy",
-          "Flat/Tight Base proxy"
-        ],
-        "distance_from_ath_pct": 15.54,
-        "ath_reference": 148.14,
-        "range_width_20d_pct": 8.85,
-        "range_width_60d_pct": 16.95,
-        "volume_vs_sma20": 0.774,
-        "volume_dryup_ratio_10d_vs_prior30d": 1.087,
-        "breakout_above_prev20d_high": false,
-        "above_avwap": true,
-        "rs_excess_63d_pct_points": 2.72,
-        "atr_pct": 1.65,
-        "reasons": [
-          "within 15.5% of ATH",
-          "60D consolidation",
-          "20D tight range",
-          "above AVWAP",
-          "RS outperforming"
-        ]
-      },
-      "strategy_b": {
-        "score": 48,
-        "qualified": false,
-        "pattern_proxies": [
-          "4-5 Day Tight Range",
-          "Flat Base proxy"
-        ],
-        "range_width_5d_pct": 2.44,
-        "range_width_10d_pct": 4.11,
-        "volume_vs_sma20": 0.774,
-        "breakout_above_prev5d_high": false,
-        "breakout_above_prev20d_high": false,
-        "trend_close_gt_ema10_gt_ema20": false,
-        "above_avwap": true,
-        "above_weekly_vwap_proxy": false,
-        "rs_excess_63d_pct_points": 2.72,
-        "reasons": [
-          "4-5 day tight range",
-          "10D flat-base behavior",
-          "above AVWAP",
-          "RS outperforming"
-        ]
-      },
-      "anchor": {
-        "requested_anchor_date": "2026-03-02",
-        "actual_trading_anchor_date": "2026-03-02",
-        "anchor_source": "auto_major_gap",
-        "anchored_vwap": 124.13,
-        "price_above_avwap": true
-      },
-      "vwap": {
-        "daily_vwap_proxy": 124.94,
-        "weekly_vwap_proxy": 125.63,
         "price_above_daily_vwap_proxy": true,
         "price_above_weekly_vwap_proxy": false,
         "note": "True intraday daily VWAP is not derivable from daily OHLCV; daily typical price and a running weekly VWAP are stored as proxies."
@@ -14378,7 +14380,7 @@
     },
     {
       "ticker": "GRAUWEIL.NS",
-      "error": "insufficient history: 165 rows"
+      "error": "insufficient history: 163 rows"
     },
     {
       "ticker": "ICICIAMC.NS",
