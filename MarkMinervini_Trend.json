@@ -1,14 +1,14 @@
 {
   "schema_version": "minervini_trend_v1",
   "scanner": "MarkMinervini Trend",
-  "generated_at_ist": "2026-09-22T17:22:24.748115+05:30",
-  "data_timestamp": "2026-09-22",
+  "generated_at_ist": "2026-09-24T17:26:52.020311+05:30",
+  "data_timestamp": "2026-09-24",
   "input_file": "stocks.json",
   "benchmark": {
     "name": "NIFTY 500",
     "yahoo_symbol": "^CRSLDX",
-    "latest_date": "2026-09-22",
-    "latest_close": 22794.2
+    "latest_date": "2026-09-24",
+    "latest_close": 22552.6
   },
   "settings": {
     "dma_stack": "50DMA > 150DMA > 200DMA",
@@ -29,15 +29,15 @@
   },
   "coverage": {
     "universe_from_stocks_json": 795,
-    "price_history_loaded": 795,
-    "price_or_technical_unavailable": 19,
-    "technical_failed": 666,
-    "technical_passed": 110,
+    "price_history_loaded": 764,
+    "price_or_technical_unavailable": 48,
+    "technical_failed": 656,
+    "technical_passed": 91,
     "fundamental_unavailable_or_insufficient": 0,
-    "fundamental_available_but_not_accelerating": 98,
+    "fundamental_available_but_not_accelerating": 78,
     "category_A_count": 2,
-    "category_B_count": 10,
-    "qualified_count": 12
+    "category_B_count": 11,
+    "qualified_count": 13
   },
   "candidates": [
     {
@@ -45,19 +45,19 @@
       "yahoo_symbol": "ACMESOLAR.NS",
       "company_name": "ACMESOLAR",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 458.65,
-      "dma50": 390.36,
-      "dma150": 328.78,
-      "dma200": 302.89,
-      "atr14": 18.53,
-      "atr_pct": 4.04,
+      "price_date": "2026-09-24",
+      "current_price": 446.65,
+      "dma50": 392.62,
+      "dma150": 331.71,
+      "dma200": 305.25,
+      "atr14": 19.11,
+      "atr_pct": 4.28,
       "atr_priority": "PREFERRED_3_TO_10",
       "high_52w": 476.9,
-      "pct_below_52w_high": 3.83,
-      "distance_from_52w_high_atrs": 0.99,
+      "pct_below_52w_high": 6.34,
+      "distance_from_52w_high_atrs": 1.58,
       "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 0,
+      "rs_new_high_recency_trading_days": 2,
       "rs_new_high_date": "2026-09-22",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
@@ -108,26 +108,26 @@
         }
       ],
       "category": "A",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 4.04%; 0.99 ATR from 52W high; RS 52W high 0 trading day(s) ago; dual EPS + sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 4.28%; 1.58 ATR from 52W high; RS 52W high 2 trading day(s) ago; dual EPS + sales acceleration"
     },
     {
       "ticker": "GLENMARK",
       "yahoo_symbol": "GLENMARK.NS",
       "company_name": "Glenmark Pharmaceuticals",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 2461.4,
-      "dma50": 2337.94,
-      "dma150": 2258.45,
-      "dma200": 2193.08,
-      "atr14": 54.66,
-      "atr_pct": 2.22,
+      "price_date": "2026-09-24",
+      "current_price": 2430.4,
+      "dma50": 2344.36,
+      "dma150": 2264.17,
+      "dma200": 2198.31,
+      "atr14": 52.84,
+      "atr_pct": 2.17,
       "atr_priority": "LOW_VOL_BELOW_3",
       "high_52w": 2537.6,
-      "pct_below_52w_high": 3.0,
-      "distance_from_52w_high_atrs": 1.39,
+      "pct_below_52w_high": 4.22,
+      "distance_from_52w_high_atrs": 2.03,
       "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 0,
+      "rs_new_high_recency_trading_days": 2,
       "rs_new_high_date": "2026-09-22",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
@@ -178,27 +178,27 @@
         }
       ],
       "category": "A",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.22%; 1.39 ATR from 52W high; RS 52W high 0 trading day(s) ago; dual EPS + sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.17%; 2.03 ATR from 52W high; RS 52W high 2 trading day(s) ago; dual EPS + sales acceleration"
     },
     {
-      "ticker": "OPTIEMUS",
-      "yahoo_symbol": "OPTIEMUS.NS",
-      "company_name": "OPTIEMUS",
+      "ticker": "SOUTHBANK",
+      "yahoo_symbol": "SOUTHBANK.NS",
+      "company_name": "SOUTHBANK",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 708.9,
-      "dma50": 585.18,
-      "dma150": 471.52,
-      "dma200": 470.31,
-      "atr14": 32.46,
-      "atr_pct": 4.58,
-      "atr_priority": "PREFERRED_3_TO_10",
-      "high_52w": 713.0,
-      "pct_below_52w_high": 0.58,
-      "distance_from_52w_high_atrs": 0.13,
+      "price_date": "2026-09-24",
+      "current_price": 49.9,
+      "dma50": 46.28,
+      "dma150": 42.95,
+      "dma200": 42.42,
+      "atr14": 1.34,
+      "atr_pct": 2.68,
+      "atr_priority": "LOW_VOL_BELOW_3",
+      "high_52w": 50.17,
+      "pct_below_52w_high": 0.54,
+      "distance_from_52w_high_atrs": 0.2,
       "rs_new_52w_high_within_10d": true,
       "rs_new_high_recency_trading_days": 0,
-      "rs_new_high_date": "2026-09-22",
+      "rs_new_high_date": "2026-09-24",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
         "price_gt_dma200": true,
@@ -210,135 +210,65 @@
       "fundamental_status": "OK",
       "fundamental_growth_method": "sequential_quarter_over_quarter",
       "accelerating_eps_quarters": 0,
-      "accelerating_sales_quarters": 4,
-      "eps_growth": [
-        {
-          "quarter": "2025-09-30",
-          "growth_pct": 12.57
-        },
-        {
-          "quarter": "2025-12-31",
-          "growth_pct": -26.6
-        },
-        {
-          "quarter": "2026-03-31",
-          "growth_pct": 83.33
-        },
-        {
-          "quarter": "2026-06-30",
-          "growth_pct": -7.11
-        }
-      ],
-      "sales_growth": [
-        {
-          "quarter": "2025-09-30",
-          "growth_pct": -3.92
-        },
-        {
-          "quarter": "2025-12-31",
-          "growth_pct": 2.81
-        },
-        {
-          "quarter": "2026-03-31",
-          "growth_pct": 12.78
-        },
-        {
-          "quarter": "2026-06-30",
-          "growth_pct": 82.07
-        }
-      ],
-      "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 4.58%; 0.13 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
-    },
-    {
-      "ticker": "SANSERA",
-      "yahoo_symbol": "SANSERA.NS",
-      "company_name": "SANSERA",
-      "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 4586.5,
-      "dma50": 3745.65,
-      "dma150": 2971.82,
-      "dma200": 2681.47,
-      "atr14": 169.07,
-      "atr_pct": 3.69,
-      "atr_priority": "PREFERRED_3_TO_10",
-      "high_52w": 4630.0,
-      "pct_below_52w_high": 0.94,
-      "distance_from_52w_high_atrs": 0.26,
-      "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 0,
-      "rs_new_high_date": "2026-09-22",
-      "technical_checks": {
-        "dma50_gt_dma150_gt_dma200": true,
-        "price_gt_dma200": true,
-        "atr_pct_le_10": true,
-        "within_4_atrs_of_52w_high": true,
-        "rs_new_52w_high_within_10_trading_days": true
-      },
-      "technical_pass": true,
-      "fundamental_status": "OK",
-      "fundamental_growth_method": "sequential_quarter_over_quarter",
-      "accelerating_eps_quarters": 0,
-      "accelerating_sales_quarters": 4,
+      "accelerating_sales_quarters": 3,
       "eps_growth": [
         {
           "quarter": "2025-06-30",
-          "growth_pct": 4.93
-        },
-        {
-          "quarter": "2025-09-30",
-          "growth_pct": 15.18
+          "growth_pct": -6.11
         },
         {
           "quarter": "2025-12-31",
-          "growth_pct": -4.34
+          "growth_pct": 16.26
         },
         {
           "quarter": "2026-03-31",
-          "growth_pct": 76.34
+          "growth_pct": 8.39
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": -7.1
         }
       ],
       "sales_growth": [
         {
           "quarter": "2025-06-30",
-          "growth_pct": -1.96
-        },
-        {
-          "quarter": "2025-09-30",
-          "growth_pct": 7.69
+          "growth_pct": 0.94
         },
         {
           "quarter": "2025-12-31",
-          "growth_pct": 9.99
+          "growth_pct": -6.04
         },
         {
           "quarter": "2026-03-31",
-          "growth_pct": 10.03
+          "growth_pct": -4.77
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 7.93
         }
       ],
       "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.69%; 0.26 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.68%; 0.2 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
     },
     {
-      "ticker": "WELSPUNLIV",
-      "yahoo_symbol": "WELSPUNLIV.NS",
-      "company_name": "Welspun Living",
+      "ticker": "NAZARA",
+      "yahoo_symbol": "NAZARA.NS",
+      "company_name": "NAZARA",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 221.51,
-      "dma50": 182.38,
-      "dma150": 151.74,
-      "dma200": 146.73,
-      "atr14": 7.07,
-      "atr_pct": 3.19,
-      "atr_priority": "PREFERRED_3_TO_10",
-      "high_52w": 224.0,
-      "pct_below_52w_high": 1.11,
-      "distance_from_52w_high_atrs": 0.35,
+      "price_date": "2026-09-24",
+      "current_price": 374.55,
+      "dma50": 349.39,
+      "dma150": 297.67,
+      "dma200": 289.52,
+      "atr14": 11.02,
+      "atr_pct": 2.94,
+      "atr_priority": "LOW_VOL_BELOW_3",
+      "high_52w": 380.0,
+      "pct_below_52w_high": 1.43,
+      "distance_from_52w_high_atrs": 0.49,
       "rs_new_52w_high_within_10d": true,
       "rs_new_high_recency_trading_days": 0,
-      "rs_new_high_date": "2026-09-22",
+      "rs_new_high_date": "2026-09-24",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
         "price_gt_dma200": true,
@@ -354,61 +284,61 @@
       "eps_growth": [
         {
           "quarter": "2025-09-30",
-          "growth_pct": -85.87
+          "growth_pct": -144.04
         },
         {
           "quarter": "2025-12-31",
-          "growth_pct": -92.31
+          "growth_pct": 131.76
         },
         {
           "quarter": "2026-03-31",
-          "growth_pct": 10700.0
+          "growth_pct": 370.37
         },
         {
           "quarter": "2026-06-30",
-          "growth_pct": 55.56
+          "growth_pct": -270.08
         }
       ],
       "sales_growth": [
         {
           "quarter": "2025-09-30",
-          "growth_pct": 7.98
+          "growth_pct": 5.55
         },
         {
           "quarter": "2025-12-31",
-          "growth_pct": -7.32
+          "growth_pct": -22.89
         },
         {
           "quarter": "2026-03-31",
-          "growth_pct": 7.66
+          "growth_pct": -2.02
         },
         {
           "quarter": "2026-06-30",
-          "growth_pct": 14.78
+          "growth_pct": 7.79
         }
       ],
       "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.19%; 0.35 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.94%; 0.49 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
     },
     {
-      "ticker": "MEDANTA",
-      "yahoo_symbol": "MEDANTA.NS",
-      "company_name": "Global Health",
+      "ticker": "DIVISLAB",
+      "yahoo_symbol": "DIVISLAB.NS",
+      "company_name": "Divi's Laboratories",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 1487.8,
-      "dma50": 1421.5,
-      "dma150": 1253.88,
-      "dma200": 1226.85,
-      "atr14": 48.64,
-      "atr_pct": 3.27,
-      "atr_priority": "PREFERRED_3_TO_10",
-      "high_52w": 1544.0,
-      "pct_below_52w_high": 3.64,
-      "distance_from_52w_high_atrs": 1.16,
+      "price_date": "2026-09-24",
+      "current_price": 9602.0,
+      "dma50": 8636.93,
+      "dma150": 7211.27,
+      "dma200": 6980.55,
+      "atr14": 192.5,
+      "atr_pct": 2.0,
+      "atr_priority": "LOW_VOL_BELOW_3",
+      "high_52w": 9740.0,
+      "pct_below_52w_high": 1.42,
+      "distance_from_52w_high_atrs": 0.72,
       "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 1,
-      "rs_new_high_date": "2026-09-21",
+      "rs_new_high_recency_trading_days": 0,
+      "rs_new_high_date": "2026-09-24",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
         "price_gt_dma200": true,
@@ -420,65 +350,65 @@
       "fundamental_status": "OK",
       "fundamental_growth_method": "sequential_quarter_over_quarter",
       "accelerating_eps_quarters": 0,
-      "accelerating_sales_quarters": 3,
+      "accelerating_sales_quarters": 4,
       "eps_growth": [
         {
-          "quarter": "2025-09-30",
-          "growth_pct": -0.34
+          "quarter": "2025-06-30",
+          "growth_pct": -17.81
         },
         {
           "quarter": "2025-12-31",
-          "growth_pct": -39.9
+          "growth_pct": 7.27
         },
         {
           "quarter": "2026-03-31",
-          "growth_pct": 51.13
+          "growth_pct": 28.8
         },
         {
           "quarter": "2026-06-30",
-          "growth_pct": 10.28
+          "growth_pct": 19.92
         }
       ],
       "sales_growth": [
         {
-          "quarter": "2025-09-30",
-          "growth_pct": 6.63
+          "quarter": "2025-06-30",
+          "growth_pct": -6.77
         },
         {
           "quarter": "2025-12-31",
-          "growth_pct": 1.99
+          "growth_pct": 8.05
         },
         {
           "quarter": "2026-03-31",
-          "growth_pct": 3.39
+          "growth_pct": 8.72
         },
         {
           "quarter": "2026-06-30",
-          "growth_pct": 12.51
+          "growth_pct": 8.8
         }
       ],
       "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.27%; 1.16 ATR from 52W high; RS 52W high 1 trading day(s) ago; >=3-quarter sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.0%; 0.72 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
     },
     {
       "ticker": "IPCALAB",
       "yahoo_symbol": "IPCALAB.NS",
       "company_name": "IPCALAB",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 1992.4,
-      "dma50": 1871.16,
-      "dma150": 1669.51,
-      "dma200": 1616.34,
-      "atr14": 52.47,
-      "atr_pct": 2.63,
+      "price_date": "2026-09-24",
+      "current_price": 1997.1,
+      "dma50": 1874.99,
+      "dma150": 1676.21,
+      "dma200": 1621.6,
+      "atr14": 51.78,
+      "atr_pct": 2.59,
       "atr_priority": "LOW_VOL_BELOW_3",
       "high_52w": 2038.0,
-      "pct_below_52w_high": 2.24,
-      "distance_from_52w_high_atrs": 0.87,
+      "pct_below_52w_high": 2.01,
+      "distance_from_52w_high_atrs": 0.79,
       "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 2,
-      "rs_new_high_date": "2026-09-18",
+      "rs_new_high_recency_trading_days": 0,
+      "rs_new_high_date": "2026-09-24",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
         "price_gt_dma200": true,
@@ -528,27 +458,167 @@
         }
       ],
       "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.63%; 0.87 ATR from 52W high; RS 52W high 2 trading day(s) ago; >=3-quarter sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.59%; 0.79 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
+    },
+    {
+      "ticker": "MEDANTA",
+      "yahoo_symbol": "MEDANTA.NS",
+      "company_name": "Global Health",
+      "index_memberships": [],
+      "price_date": "2026-09-24",
+      "current_price": 1506.2,
+      "dma50": 1428.35,
+      "dma150": 1258.45,
+      "dma200": 1230.04,
+      "atr14": 45.92,
+      "atr_pct": 3.05,
+      "atr_priority": "PREFERRED_3_TO_10",
+      "high_52w": 1544.0,
+      "pct_below_52w_high": 2.45,
+      "distance_from_52w_high_atrs": 0.82,
+      "rs_new_52w_high_within_10d": true,
+      "rs_new_high_recency_trading_days": 0,
+      "rs_new_high_date": "2026-09-24",
+      "technical_checks": {
+        "dma50_gt_dma150_gt_dma200": true,
+        "price_gt_dma200": true,
+        "atr_pct_le_10": true,
+        "within_4_atrs_of_52w_high": true,
+        "rs_new_52w_high_within_10_trading_days": true
+      },
+      "technical_pass": true,
+      "fundamental_status": "OK",
+      "fundamental_growth_method": "sequential_quarter_over_quarter",
+      "accelerating_eps_quarters": 0,
+      "accelerating_sales_quarters": 3,
+      "eps_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": -0.34
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -39.9
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 51.13
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 10.28
+        }
+      ],
+      "sales_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 6.63
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": 1.99
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 3.39
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 12.51
+        }
+      ],
+      "category": "B",
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.05%; 0.82 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
+    },
+    {
+      "ticker": "WELSPUNLIV",
+      "yahoo_symbol": "WELSPUNLIV.NS",
+      "company_name": "Welspun Living",
+      "index_memberships": [],
+      "price_date": "2026-09-24",
+      "current_price": 222.32,
+      "dma50": 184.68,
+      "dma150": 152.87,
+      "dma200": 147.64,
+      "atr14": 7.72,
+      "atr_pct": 3.47,
+      "atr_priority": "PREFERRED_3_TO_10",
+      "high_52w": 233.0,
+      "pct_below_52w_high": 4.58,
+      "distance_from_52w_high_atrs": 1.38,
+      "rs_new_52w_high_within_10d": true,
+      "rs_new_high_recency_trading_days": 0,
+      "rs_new_high_date": "2026-09-24",
+      "technical_checks": {
+        "dma50_gt_dma150_gt_dma200": true,
+        "price_gt_dma200": true,
+        "atr_pct_le_10": true,
+        "within_4_atrs_of_52w_high": true,
+        "rs_new_52w_high_within_10_trading_days": true
+      },
+      "technical_pass": true,
+      "fundamental_status": "OK",
+      "fundamental_growth_method": "sequential_quarter_over_quarter",
+      "accelerating_eps_quarters": 0,
+      "accelerating_sales_quarters": 3,
+      "eps_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": -85.87
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -92.31
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 10700.0
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 55.56
+        }
+      ],
+      "sales_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 7.98
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -7.32
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 7.66
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 14.78
+        }
+      ],
+      "category": "B",
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.47%; 1.38 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
     },
     {
       "ticker": "LALPATHLAB",
       "yahoo_symbol": "LALPATHLAB.NS",
       "company_name": "Dr. Lal PathLabs",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 1909.8,
-      "dma50": 1875.83,
-      "dma150": 1630.76,
-      "dma200": 1579.68,
-      "atr14": 52.8,
-      "atr_pct": 2.76,
+      "price_date": "2026-09-24",
+      "current_price": 1961.3,
+      "dma50": 1884.43,
+      "dma150": 1637.9,
+      "dma200": 1584.4,
+      "atr14": 52.79,
+      "atr_pct": 2.69,
       "atr_priority": "LOW_VOL_BELOW_3",
       "high_52w": 2038.6,
-      "pct_below_52w_high": 6.32,
-      "distance_from_52w_high_atrs": 2.44,
+      "pct_below_52w_high": 3.79,
+      "distance_from_52w_high_atrs": 1.46,
       "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 3,
-      "rs_new_high_date": "2026-09-17",
+      "rs_new_high_recency_trading_days": 0,
+      "rs_new_high_date": "2026-09-24",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
         "price_gt_dma200": true,
@@ -598,26 +668,166 @@
         }
       ],
       "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.76%; 2.44 ATR from 52W high; RS 52W high 3 trading day(s) ago; >=3-quarter sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 2.69%; 1.46 ATR from 52W high; RS 52W high 0 trading day(s) ago; >=3-quarter sales acceleration"
+    },
+    {
+      "ticker": "PGIL",
+      "yahoo_symbol": "PGIL.NS",
+      "company_name": "PGIL",
+      "index_memberships": [],
+      "price_date": "2026-09-24",
+      "current_price": 1273.6,
+      "dma50": 1139.38,
+      "dma150": 929.48,
+      "dma200": 895.05,
+      "atr14": 58.48,
+      "atr_pct": 4.59,
+      "atr_priority": "PREFERRED_3_TO_10",
+      "high_52w": 1328.7,
+      "pct_below_52w_high": 4.15,
+      "distance_from_52w_high_atrs": 0.94,
+      "rs_new_52w_high_within_10d": true,
+      "rs_new_high_recency_trading_days": 1,
+      "rs_new_high_date": "2026-09-23",
+      "technical_checks": {
+        "dma50_gt_dma150_gt_dma200": true,
+        "price_gt_dma200": true,
+        "atr_pct_le_10": true,
+        "within_4_atrs_of_52w_high": true,
+        "rs_new_52w_high_within_10_trading_days": true
+      },
+      "technical_pass": true,
+      "fundamental_status": "OK",
+      "fundamental_growth_method": "sequential_quarter_over_quarter",
+      "accelerating_eps_quarters": 0,
+      "accelerating_sales_quarters": 3,
+      "eps_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 8.34
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -27.21
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 56.11
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 20.61
+        }
+      ],
+      "sales_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 6.92
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -10.87
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 12.25
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 16.34
+        }
+      ],
+      "category": "B",
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 4.59%; 0.94 ATR from 52W high; RS 52W high 1 trading day(s) ago; >=3-quarter sales acceleration"
+    },
+    {
+      "ticker": "OPTIEMUS",
+      "yahoo_symbol": "OPTIEMUS.NS",
+      "company_name": "OPTIEMUS",
+      "index_memberships": [],
+      "price_date": "2026-09-24",
+      "current_price": 781.5,
+      "dma50": 594.39,
+      "dma150": 476.68,
+      "dma200": 473.01,
+      "atr14": 41.49,
+      "atr_pct": 5.31,
+      "atr_priority": "PREFERRED_3_TO_10",
+      "high_52w": 850.65,
+      "pct_below_52w_high": 8.13,
+      "distance_from_52w_high_atrs": 1.67,
+      "rs_new_52w_high_within_10d": true,
+      "rs_new_high_recency_trading_days": 1,
+      "rs_new_high_date": "2026-09-23",
+      "technical_checks": {
+        "dma50_gt_dma150_gt_dma200": true,
+        "price_gt_dma200": true,
+        "atr_pct_le_10": true,
+        "within_4_atrs_of_52w_high": true,
+        "rs_new_52w_high_within_10_trading_days": true
+      },
+      "technical_pass": true,
+      "fundamental_status": "OK",
+      "fundamental_growth_method": "sequential_quarter_over_quarter",
+      "accelerating_eps_quarters": 0,
+      "accelerating_sales_quarters": 4,
+      "eps_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": 12.57
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": -26.6
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 83.33
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": -7.11
+        }
+      ],
+      "sales_growth": [
+        {
+          "quarter": "2025-09-30",
+          "growth_pct": -3.92
+        },
+        {
+          "quarter": "2025-12-31",
+          "growth_pct": 2.81
+        },
+        {
+          "quarter": "2026-03-31",
+          "growth_pct": 12.78
+        },
+        {
+          "quarter": "2026-06-30",
+          "growth_pct": 82.07
+        }
+      ],
+      "category": "B",
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 5.31%; 1.67 ATR from 52W high; RS 52W high 1 trading day(s) ago; >=3-quarter sales acceleration"
     },
     {
       "ticker": "CUPID",
       "yahoo_symbol": "CUPID.NS",
       "company_name": "CUPID",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 258.2,
-      "dma50": 260.19,
-      "dma150": 169.78,
-      "dma200": 148.77,
-      "atr14": 12.78,
-      "atr_pct": 4.95,
+      "price_date": "2026-09-24",
+      "current_price": 266.3,
+      "dma50": 262.34,
+      "dma150": 172.26,
+      "dma200": 150.7,
+      "atr14": 13.39,
+      "atr_pct": 5.03,
       "atr_priority": "PREFERRED_3_TO_10",
       "high_52w": 299.0,
-      "pct_below_52w_high": 13.65,
-      "distance_from_52w_high_atrs": 3.19,
+      "pct_below_52w_high": 10.94,
+      "distance_from_52w_high_atrs": 2.44,
       "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 5,
+      "rs_new_high_recency_trading_days": 7,
       "rs_new_high_date": "2026-09-15",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
@@ -668,96 +878,26 @@
         }
       ],
       "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 4.95%; 3.19 ATR from 52W high; RS 52W high 5 trading day(s) ago; >=3-quarter sales acceleration"
-    },
-    {
-      "ticker": "NAZARA",
-      "yahoo_symbol": "NAZARA.NS",
-      "company_name": "NAZARA",
-      "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 370.45,
-      "dma50": 346.81,
-      "dma150": 296.34,
-      "dma200": 288.04,
-      "atr14": 11.14,
-      "atr_pct": 3.01,
-      "atr_priority": "PREFERRED_3_TO_10",
-      "high_52w": 380.0,
-      "pct_below_52w_high": 2.51,
-      "distance_from_52w_high_atrs": 0.86,
-      "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 7,
-      "rs_new_high_date": "2026-09-10",
-      "technical_checks": {
-        "dma50_gt_dma150_gt_dma200": true,
-        "price_gt_dma200": true,
-        "atr_pct_le_10": true,
-        "within_4_atrs_of_52w_high": true,
-        "rs_new_52w_high_within_10_trading_days": true
-      },
-      "technical_pass": true,
-      "fundamental_status": "OK",
-      "fundamental_growth_method": "sequential_quarter_over_quarter",
-      "accelerating_eps_quarters": 0,
-      "accelerating_sales_quarters": 3,
-      "eps_growth": [
-        {
-          "quarter": "2025-09-30",
-          "growth_pct": -144.04
-        },
-        {
-          "quarter": "2025-12-31",
-          "growth_pct": 131.76
-        },
-        {
-          "quarter": "2026-03-31",
-          "growth_pct": 370.37
-        },
-        {
-          "quarter": "2026-06-30",
-          "growth_pct": -270.08
-        }
-      ],
-      "sales_growth": [
-        {
-          "quarter": "2025-09-30",
-          "growth_pct": 5.55
-        },
-        {
-          "quarter": "2025-12-31",
-          "growth_pct": -22.89
-        },
-        {
-          "quarter": "2026-03-31",
-          "growth_pct": -2.02
-        },
-        {
-          "quarter": "2026-06-30",
-          "growth_pct": 7.79
-        }
-      ],
-      "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.01%; 0.86 ATR from 52W high; RS 52W high 7 trading day(s) ago; >=3-quarter sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 5.03%; 2.44 ATR from 52W high; RS 52W high 7 trading day(s) ago; >=3-quarter sales acceleration"
     },
     {
       "ticker": "CRAFTSMAN",
       "yahoo_symbol": "CRAFTSMAN.NS",
       "company_name": "Craftsman Automation Limited",
       "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 10602.0,
-      "dma50": 10499.19,
-      "dma150": 8963.88,
-      "dma200": 8591.37,
-      "atr14": 420.63,
-      "atr_pct": 3.97,
+      "price_date": "2026-09-24",
+      "current_price": 10710.0,
+      "dma50": 10564.84,
+      "dma150": 9003.06,
+      "dma200": 8628.73,
+      "atr14": 420.66,
+      "atr_pct": 3.93,
       "atr_priority": "PREFERRED_3_TO_10",
       "high_52w": 11999.0,
-      "pct_below_52w_high": 11.64,
-      "distance_from_52w_high_atrs": 3.32,
+      "pct_below_52w_high": 10.74,
+      "distance_from_52w_high_atrs": 3.06,
       "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 7,
+      "rs_new_high_recency_trading_days": 9,
       "rs_new_high_date": "2026-09-10",
       "technical_checks": {
         "dma50_gt_dma150_gt_dma200": true,
@@ -808,77 +948,7 @@
         }
       ],
       "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.97%; 3.32 ATR from 52W high; RS 52W high 7 trading day(s) ago; >=3-quarter sales acceleration"
-    },
-    {
-      "ticker": "DIVISLAB",
-      "yahoo_symbol": "DIVISLAB.NS",
-      "company_name": "Divi's Laboratories",
-      "index_memberships": [],
-      "price_date": "2026-09-22",
-      "current_price": 9352.0,
-      "dma50": 8544.19,
-      "dma150": 7166.23,
-      "dma200": 6948.43,
-      "atr14": 182.72,
-      "atr_pct": 1.95,
-      "atr_priority": "LOW_VOL_BELOW_3",
-      "high_52w": 9615.0,
-      "pct_below_52w_high": 2.74,
-      "distance_from_52w_high_atrs": 1.44,
-      "rs_new_52w_high_within_10d": true,
-      "rs_new_high_recency_trading_days": 9,
-      "rs_new_high_date": "2026-09-08",
-      "technical_checks": {
-        "dma50_gt_dma150_gt_dma200": true,
-        "price_gt_dma200": true,
-        "atr_pct_le_10": true,
-        "within_4_atrs_of_52w_high": true,
-        "rs_new_52w_high_within_10_trading_days": true
-      },
-      "technical_pass": true,
-      "fundamental_status": "OK",
-      "fundamental_growth_method": "sequential_quarter_over_quarter",
-      "accelerating_eps_quarters": 0,
-      "accelerating_sales_quarters": 4,
-      "eps_growth": [
-        {
-          "quarter": "2025-06-30",
-          "growth_pct": -17.81
-        },
-        {
-          "quarter": "2025-12-31",
-          "growth_pct": 7.27
-        },
-        {
-          "quarter": "2026-03-31",
-          "growth_pct": 28.8
-        },
-        {
-          "quarter": "2026-06-30",
-          "growth_pct": 19.92
-        }
-      ],
-      "sales_growth": [
-        {
-          "quarter": "2025-06-30",
-          "growth_pct": -6.77
-        },
-        {
-          "quarter": "2025-12-31",
-          "growth_pct": 8.05
-        },
-        {
-          "quarter": "2026-03-31",
-          "growth_pct": 8.72
-        },
-        {
-          "quarter": "2026-06-30",
-          "growth_pct": 8.8
-        }
-      ],
-      "category": "B",
-      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 1.95%; 1.44 ATR from 52W high; RS 52W high 9 trading day(s) ago; >=3-quarter sales acceleration"
+      "qualification_reason": "50DMA>150DMA>200DMA; price>200DMA; ATR 3.93%; 3.06 ATR from 52W high; RS 52W high 9 trading day(s) ago; >=3-quarter sales acceleration"
     }
   ],
   "technical_passers_unclassified": [],
@@ -886,97 +956,242 @@
     {
       "ticker": "AEQUS",
       "yahoo_symbol": "AEQUS.NS",
-      "reason": "insufficient price history (198 rows; need >=210)"
+      "reason": "insufficient price history (200 rows; need >=210)"
+    },
+    {
+      "ticker": "ANUP",
+      "yahoo_symbol": "ANUP.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "ASTRAL",
+      "yahoo_symbol": "ASTRAL.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "BALRAMCHIN",
+      "yahoo_symbol": "BALRAMCHIN.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "CAPILLARY",
       "yahoo_symbol": "CAPILLARY.NS",
-      "reason": "insufficient stock/benchmark overlap (206 rows)"
+      "reason": "insufficient stock/benchmark overlap (208 rows)"
+    },
+    {
+      "ticker": "CERA",
+      "yahoo_symbol": "CERA.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "CLEAN",
+      "yahoo_symbol": "CLEAN.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "CMSINFO",
+      "yahoo_symbol": "CMSINFO.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "CORONA",
       "yahoo_symbol": "CORONA.NS",
-      "reason": "insufficient price history (194 rows; need >=210)"
+      "reason": "insufficient price history (196 rows; need >=210)"
+    },
+    {
+      "ticker": "DHANBANK",
+      "yahoo_symbol": "DHANBANK.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "DYNAMATECH",
+      "yahoo_symbol": "DYNAMATECH.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "FLUOROCHEM",
+      "yahoo_symbol": "FLUOROCHEM.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "FRONTSP",
       "yahoo_symbol": "FRONTSP.NS",
-      "reason": "insufficient price history (25 rows; need >=210)"
+      "reason": "insufficient price history (28 rows; need >=210)"
+    },
+    {
+      "ticker": "GPPL",
+      "yahoo_symbol": "GPPL.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "GRAUWEIL",
       "yahoo_symbol": "GRAUWEIL.NS",
-      "reason": "insufficient price history (115 rows; need >=210)"
+      "reason": "insufficient price history (117 rows; need >=210)"
+    },
+    {
+      "ticker": "HDFCLIFE",
+      "yahoo_symbol": "HDFCLIFE.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "HINDALCO",
+      "yahoo_symbol": "HINDALCO.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "ICICIAMC",
       "yahoo_symbol": "ICICIAMC.NS",
-      "reason": "insufficient price history (191 rows; need >=210)"
+      "reason": "insufficient price history (193 rows; need >=210)"
+    },
+    {
+      "ticker": "IDBI",
+      "yahoo_symbol": "IDBI.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "INOXGREEN",
+      "yahoo_symbol": "INOXGREEN.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "IREDA",
+      "yahoo_symbol": "IREDA.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "LENSKART",
+      "yahoo_symbol": "LENSKART.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "LODHA",
+      "yahoo_symbol": "LODHA.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "MEESHO",
       "yahoo_symbol": "MEESHO.NS",
-      "reason": "insufficient price history (198 rows; need >=210)"
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "NFL",
+      "yahoo_symbol": "NFL.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "NMDC",
+      "yahoo_symbol": "NMDC.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "PARKHOSPS",
       "yahoo_symbol": "PARKHOSPS.NS",
-      "reason": "insufficient price history (193 rows; need >=210)"
+      "reason": "insufficient price history (195 rows; need >=210)"
+    },
+    {
+      "ticker": "PATELENG",
+      "yahoo_symbol": "PATELENG.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "POLYCAB",
+      "yahoo_symbol": "POLYCAB.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "POWERGRID",
+      "yahoo_symbol": "POWERGRID.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "POWERMECH",
+      "yahoo_symbol": "POWERMECH.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "RCF",
+      "yahoo_symbol": "RCF.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "RUDRA",
       "yahoo_symbol": "RUDRA.NS",
-      "reason": "insufficient price history (190 rows; need >=210)"
+      "reason": "insufficient price history (192 rows; need >=210)"
+    },
+    {
+      "ticker": "SANSERA",
+      "yahoo_symbol": "SANSERA.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "SHILCTECH",
       "yahoo_symbol": "SHILCTECH.NS",
-      "reason": "insufficient stock/benchmark overlap (205 rows)"
+      "reason": "insufficient stock/benchmark overlap (207 rows)"
     },
     {
       "ticker": "SKFINDUS",
       "yahoo_symbol": "SKFINDUS.NS",
-      "reason": "insufficient price history (197 rows; need >=210)"
+      "reason": "insufficient price history (200 rows; need >=210)"
+    },
+    {
+      "ticker": "STARHEALTH",
+      "yahoo_symbol": "STARHEALTH.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "STLTECH",
+      "yahoo_symbol": "STLTECH.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "SUDEEPPHRM",
       "yahoo_symbol": "SUDEEPPHRM.NS",
-      "reason": "insufficient price history (205 rows; need >=210)"
+      "reason": "insufficient price history (208 rows; need >=210)"
     },
     {
-      "ticker": "TENNIND",
-      "yahoo_symbol": "TENNIND.NS",
-      "reason": "insufficient stock/benchmark overlap (208 rows)"
+      "ticker": "SUNTECK",
+      "yahoo_symbol": "SUNTECK.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "TRIVENI",
+      "yahoo_symbol": "TRIVENI.NS",
+      "reason": "empty/invalid OHLCV"
+    },
+    {
+      "ticker": "UFO",
+      "yahoo_symbol": "UFO.NS",
+      "reason": "empty/invalid OHLCV"
     },
     {
       "ticker": "UTLSOLAR",
       "yahoo_symbol": "UTLSOLAR.NS",
-      "reason": "insufficient stock/benchmark overlap (207 rows)"
+      "reason": "insufficient stock/benchmark overlap (209 rows)"
     },
     {
       "ticker": "VAML",
       "yahoo_symbol": "VAML.NS",
-      "reason": "insufficient price history (72 rows; need >=210)"
+      "reason": "insufficient price history (74 rows; need >=210)"
     },
     {
       "ticker": "VEDPOWER",
       "yahoo_symbol": "VEDPOWER.NS",
-      "reason": "insufficient price history (72 rows; need >=210)"
+      "reason": "insufficient price history (74 rows; need >=210)"
     },
     {
       "ticker": "VISL",
       "yahoo_symbol": "VISL.NS",
-      "reason": "insufficient price history (72 rows; need >=210)"
+      "reason": "insufficient price history (74 rows; need >=210)"
     },
     {
       "ticker": "VOGL",
       "yahoo_symbol": "VOGL.NS",
-      "reason": "insufficient price history (72 rows; need >=210)"
+      "reason": "insufficient price history (74 rows; need >=210)"
     },
     {
       "ticker": "WAKEFIT",
       "yahoo_symbol": "WAKEFIT.NS",
-      "reason": "insufficient price history (194 rows; need >=210)"
+      "reason": "insufficient price history (196 rows; need >=210)"
     }
   ]
 }
